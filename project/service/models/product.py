@@ -108,3 +108,15 @@ class ProductCategory(BaseModel):
 
     product = models.ForeignKey(to='Product', on_delete=models.CASCADE)
     category = models.ForeignKey(to='Category', on_delete=models.CASCADE)
+
+class Stock(models.Model):
+    class Meta:
+        verbose_name = '상품재고'
+
+    prodcut=models.OneToOneField(to='Product', on_delete=models.CASCADE)
+    amount=models.IntegerField(
+        verbose_name='재고 양',
+        default=0,
+        null=True,
+        blank=True
+    )
