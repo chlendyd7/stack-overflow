@@ -35,6 +35,11 @@ class Product(BaseModel):
         null=True,
         blank=True,
     )
+    category=models.ManyToManyField(
+        to='Category',
+        through='ProductCategory'
+    )
+
 
 class ProductImage(BaseModel):
     class Meta:
@@ -81,3 +86,25 @@ class ProductImage(BaseModel):
         null=True,
         blank=True,
     )
+
+
+class Category(BaseModel):
+    class Meta:
+        verbose_name = '카테고리'
+        verbose_name_plural = verbose_name
+
+    name = models.CharField(
+        verbose_name='이름',
+        max_length=64,
+    )
+
+    def __str__(self):
+        return self.name
+
+
+class ProductCategory(BaseModel):
+    class Meta:
+        verbose_name = '상품, 카테고리 관계 테이블'
+
+    product = models.ForeignKey(to='Product', on_delete=models.CASCADE)
+    category = models.ForeignKey(to='Category', on_delete=models.CASCADE)
