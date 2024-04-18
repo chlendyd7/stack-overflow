@@ -1,0 +1,127 @@
+.main_page{width: 100%; color: #fff;}
+.main_page a{color: #fff;}
+
+.color{color: #f6ac3c;}
+.flex{display: flex; flex-wrap: wrap;}
+.hidden {display: none !important;}
+
+.point_f{font-family: 'GmarketSans';}
+.point_c{color:#f6ac3c !important}
+
+.main_page .page_tit{padding-bottom: 40px;}
+
+
+/* section_01 메인 배너 */
+.section_01{width: 100%; height: 100vh; position: relative; overflow: hidden; }
+
+.section_01 .banner_top{width: 100%; height: 65%;}
+.section_01 .banner_img{width: 100%; height: 35%; background: url(../images/main/banner_img.png) no-repeat; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center;}
+
+.section_01 .banner_top .inner{height: 100%; display: flex; flex-direction: column; justify-content: flex-end; text-align: center;}
+.section_01 .banner_top .center_txt h2{line-height: 200%;}
+.section_01 .banner_top .center_tit{width: 100%; margin: 40px 0 50px;}
+.section_01 .banner_top .center_tit h1{font-size: 4.2vw; line-height: 150%; padding-bottom: 20px;}
+
+.section_01 .banner_img{text-align: right;}
+.section_01 .banner_img h3{padding-bottom: 30px; margin-bottom: 30px; position: relative; text-shadow: 3px 5px 8px #00000033;}
+.section_01 .banner_img h2{ text-shadow: 3px 5px 8px #00000033;}
+.section_01 .banner_img h3::after{content: ""; width: 45px; height: 5px; background: #f6ac3c; position: absolute; right: 0; bottom: 0;}
+
+.section_01 .scroll_down{position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center; line-height: 170%; font-family: 'GmarketSans'; font-weight: 500; animation: scroll 2s infinite linear;}
+@keyframes scroll {
+    0%{transform: translateX(-50%) translateY(0px);}
+    50%{transform: translateX(-50%) translateY(15px);}
+    100%{transform: translateX(-50%) translateY(0px);}
+}
+
+@media screen and (max-width : 1020px) {
+    .section_01 .banner_top .fll_txt{text-align: left; width: 100%; margin: 40px 0 20px;}
+    .section_01 .banner_top .fll_txt h1{font-size: 5.6vw; line-height: 150%;}
+    .section_01 .scroll_down{font-size: 13px;}
+}
+@media screen and (max-width : 738px) {
+    .section_01 .banner_top .flr_txt h2{font-size: 16px;}
+    .section_01 .banner_top .fll_txt h1{font-size: 6.8vw; line-height: 150%;}
+    .section_01 .banner_img{text-align: left;}
+    .section_01 .banner_img h3::after{right: auto; left: 0;}
+
+    .section_01 .scroll_down{display: none;}
+}
+
+
+
+/* section_02 학과소개 */
+.section_02{width: 100%; padding: 150px 0; text-align: center;}
+.section_02 .link_a{margin-top: 50px;}
+.section_02 .link_a a{border: 1px solid #f6ac3c; color: #f6ac3c; box-sizing: border-box; border-radius: 30px; display: inline-block; padding: 5px 30px; transition: .25s;}
+.section_02 .link_a a:hover{background: #f6ac3c; color: #fff;}
+
+
+/* 학과별 링크 */
+.section_03{width: 100%;}
+.section_03 ul.link_list{width: 100%; border-top: 1px solid #fff; box-sizing: border-box;}
+.section_03 ul.link_list li{border-bottom: 1px solid #fff; box-sizing: border-box; padding: 60px 40px; display: flex; justify-content: space-between; align-items: flex-end;}
+.section_03 ul.link_list li .link_page a b{transition: .25s;}
+.section_03 ul.link_list li .link_page a:hover b{transform: translateX(10px); display: inline-block;}
+@media screen and (max-width : 1400px) {
+    .section_03 ul.link_list li .link_page a{font-size: 20px;}
+}
+@media screen and (max-width : 1200px) {
+    .section_03 ul.link_list li{flex-direction: column; align-items: flex-start; padding: 30px 20px;}
+    .section_03 ul.link_list li .link_page{margin-top: 12px;}
+}
+@media screen and (max-width : 768px) {
+    .section_03 ul.link_list li .link_page a{font-size: 16px;}
+}
+
+
+/* section_04 관련 자격증 */
+.section_04{width: 100%; padding: 250px 0 100px; overflow: hidden;}
+
+.section_04 .bg_info{text-align: right; position: relative; padding-bottom: 200px;}
+.section_04 .bg_info h4{padding: 10px 0 30px;}
+.section_04 .bg_info p{line-height: 180%;}
+.section_04 .bg_info > img{position: absolute; bottom: 0; left: 0; z-index: -1;}
+
+.section_04 .program_list{width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.section_04 .program_list li{width: calc(33.3333% - 10px); background: #29292988; padding: 40px 30px; border-radius: 7px; transition: .25s; opacity: 0.7; border: 2px solid #292929ad;}
+.section_04 .program_list li:nth-child(1n + 4){margin-top: 20px;}
+.section_04 .program_list li h5{padding-bottom: 30px; position: relative;}
+.section_04 .program_list li h5::after{content: ""; width: 20px; height: 3px; background: #f6ac3c; position: absolute; bottom: 15px; left: 0;}
+.section_04 .program_list li span{display: inline-block; padding-bottom: 15px;}
+.section_04 .program_list li .p_list{min-height: 100px;}
+.section_04 .program_list li .p_list p{padding-left: 15px; position: relative;}
+.section_04 .program_list li .p_list p::before{content: ""; width: 5px; height: 5px; background: #f6ac3c; border-radius: 100%; position: absolute; left: 0; top: 12px;}
+
+.section_04 .program_list li .link_a a{border: 1px solid #f6ac3c; color: #f6ac3c; box-sizing: border-box; border-radius: 30px; display: inline-block; padding: 5px 20px; transition: .25s; margin-top: 20px;}
+.section_04 .program_list li .link_a a:hover{background: #f6ac3c; color: #fff;}
+
+.section_04 .program_list li:hover{opacity: 1; transform: translateY(-10px); border: 2px solid #f6ac3c; box-sizing: border-box;}
+
+@media screen and (max-width : 1200px) {
+    .section_04 .program_list li{width: calc(50% - 10px); padding: 30px 20px;}
+    .section_04 .program_list li:nth-child(1n + 3){margin-top: 20px;}
+}
+@media screen and (max-width : 950px) {
+    .section_04 .bg_info > img{max-width: 350px;}
+}
+@media screen and (max-width : 768px) {
+    .section_04{padding: 100px 0 60px;}
+    .section_04 .program_list li{width: calc(100%); padding: 20px 15px;}
+    .section_04 .program_list li:nth-child(1n + 2){margin-top: 20px;}
+    .section_04 .program_list li .p_list{min-height: auto;}
+}
+
+
+.section_05{width: 100%; padding: 60px 0 100px; text-align: center;}
+.section_05 .bottom_btn_link{width: 100%;}
+.section_05 .bottom_btn_link a{background: transparent; border: 1px solid #fff; box-sizing: border-box; color: #b8b8b8; padding: 20px 20px; transition: .25s; width: 100%; margin-top: 20px; text-align: left; position: relative; display: inline-block; max-width: 440px;}
+.section_05 .bottom_btn_link a b{color: #fff;}
+.section_05 .bottom_btn_link a i{font-size: 40px; position: absolute; right: 20px; top: 20px; color: #f6ac3c; transition: .25s;}
+.section_05 .bottom_btn_link a:hover{background: #f6ac3c; border: 1px solid #f6ac3c; color: #fff;}
+.section_05 .bottom_btn_link a:hover i{color: #fff;}
+
+
+
+
+

@@ -1,0 +1,129 @@
+sub * {color:#fff}
+sub a* {color:#fff}
+sub .inner {max-width:1330px;}
+sub .location {padding-top:20px}
+sub .location span {color:#767676; margin:0px 10px}
+sub nav {padding:200px 0px 0px}
+sub h3 {padding:150px 0px 40px}
+sub .swiper-container {overflow: hidden; padding-top:40px}
+sub .swiper-container .swiper-slide img {width:100%; border-radius:20px}
+sub section {position: relative;}
+sub .swiper-button-next, sub .swiper-button-prev {color:#fff; margin-top:0px}
+sub .nav {display:flex; align-items: flex-end;  justify-content: space-between;}
+sub .nav ul {display:flex}
+sub .nav ul li {margin-left:10px}
+sub .nav ul li a {color:#fff; padding:7px 20px; border-radius:50px; border:1px solid #fff; font-weight:500;  display:block}
+sub .nav ul li a.on {color:#000; background:#fff; border:1px solid #fff;}
+sub .nav ul li a:hover {color:#000; background:#fff; border:1px solid #fff}
+.right {text-align:right}
+.btn a {display:inline-block; position: relative;margin: 10px;background-color:#f6ac3c; padding:10px 40px; border-radius:10px}
+.btn a:after {content: '';  position: absolute; top: -5px; bottom: -5px; left: -5px; right: -5px; border: 2px solid #f6ac3c;;  border-radius: 10px;}
+
+/* 학과안내 */
+#sub02 {padding-bottom:150px}
+#sub02 #section_01 {padding-top:150px}
+#sub02 #section_01 ul{display:flex; align-items: center; padding-bottom:100px}
+#sub02 #section_01 ul li:first-child{width:100px}
+#sub02 #section_01 ul li:nth-child(2){padding:0px 100px 0px 20px}
+
+
+#sub02 #section_02 > ul{display:flex;}
+#sub02 #section_02 > ul > li:first-child{width:100px}
+#sub02 #section_02 > ul > li > ul{list-style-image: url('../images/sub/dot.png'); padding-left:60px; }
+#sub02 #section_02 > ul > li > ul:nth-child(2){list-style-image: url('../images/sub/dot03.png'); padding-left:60px;  }
+#sub02 #section_02 > ul > li > ul > li > div {margin-left:20px; margin-bottom:10px}
+
+#sub02 #section_03 {padding-top:150px}
+#sub02 #section_03 ul{display:flex; flex-wrap: wrap;  }
+#sub02 #section_03 > ul > li:first-child{width:100px}
+#sub02 #section_03 > ul > li:last-child{width:calc(100% - 148px); margin-left:48px}
+#sub02 #section_03 > ul > li > ul {flex-wrap: wrap; }
+#sub02 #section_03 > ul > li > ul > li {width:calc(33.33%); border-left:1px solid #fff; padding:20px 30px; margin-bottom:60px}
+
+#sub02 #section_04 {margin-top:60px}
+
+/* 대학생활 */
+#sub03 {padding-bottom:150px}
+#sub03 #section_01{padding-top:100px; padding-bottom:20px; border-bottom:1px solid #9d9d9d}
+#sub03 #section_01 ul{display:flex; flex-wrap: wrap;}
+#sub03 #section_01 ul li a {font-size:18px; margin:0px 10px;font-weight:400; line-height:180%; word-break: keep-all;}
+#sub03 #section_01 ul li a:hover {border-bottom:1px solid #fff}
+#sub03 #section_01 ul li:after {content:"|"; font-size:18px; display:inline-block; font-weight:400}
+#sub03 #section_01 ul li:last-child:after {display:none}
+
+#sub03  ul.table_ul {display:flex; flex-wrap: wrap; border:1px solid #9d9d9d; border-radius:20px;}
+#sub03  ul.table_ul  > li {font-size:17px; line-height:180%; word-break: keep-all; font-weight:400; padding:40px 25px; border-bottom:1px solid #9d9d9d;}
+#sub03  ul.table_ul  > li:nth-child(odd){width:10%; text-align:center; border-left:1px solid #9d9d9d}
+#sub03  ul.table_ul  > li:nth-child(even){width:23.333%; border-left:1px solid #9d9d9d}
+#sub03  ul.table_ul  > li:nth-child(7){border-bottom:0px; border-left:0px}
+#sub03  ul.table_ul  > li:first-child{border-left:0px}
+#sub03  ul.table_ul  > li:last-child{width:90%; border-bottom:0px}
+#sub03  ul.table_ul > li:last-child  > ul{list-style-image: url('../images/sub/dot.png'); padding-left:20px;}
+
+/* 입학안내 */
+#sub04 {padding-bottom:150px}
+#sub04 table {width:100%; font-size:17px; line-height:180%; word-break: keep-all; text-align:center}
+#sub04 table th{word-break: auto-phrase;padding:30px 20px; border-top:1px solid #9d9d9d; border-bottom:1px solid #9d9d9d; border-left:1px solid #9d9d9d; font-weight:600; width:33.333%}
+#sub04 table th:last-child {border-right:1px solid #9d9d9d;}
+#sub04 table td{word-break: auto-phrase;padding:30px 20px; background:#0d0d0d; border-bottom:1px solid #9d9d9d; border-left:1px solid #9d9d9d; width:33.333%}
+#sub04 table td:last-child {border-right:1px solid #9d9d9d;}
+#sub04 table td:last-child ul{list-style-image: url('../images/sub/dot.png'); padding-left:20px;}
+#sub04 table td.left {text-align:left}
+
+#sub04_02 #section_01 {padding:150px 0px}
+#sub04_02 #section_01 .bg {background:url('../images/sub/04_01.png') no-repeat; width:100%; background-size:cover; height:100%; padding:70px 40px; border-radius:10px}
+#sub04_02 #section_01 .bg .btn {padding-top:30px}
+
+
+@media screen and (max-width: 1200px) {
+#sub03 #section_01 ul li a  {font-size:17px;}
+#sub03 ul.table_ul li {font-size:16px;}
+#sub04 table  {font-size:16px;}
+}
+
+@media screen and (max-width: 1000px) {
+#sub03  ul.table_ul  > li:nth-child(odd){width:20%;}
+#sub03  ul.table_ul  > li:nth-child(even){width:80%;}
+
+}
+@media screen and (max-width: 768px) {
+sub .nav {display:block}
+sub .nav ul {margin-top:20px;justify-content: flex-end;}
+sub .nav ul li a {padding:7px 15px;}
+
+#sub02 #section_01 ul {flex-wrap: wrap;}
+#sub02 #section_01 ul li:last-child {width:100%; padding-top:20px}
+#sub02 #section_02 > ul{flex-wrap: wrap;}
+#sub02 #section_02 > ul > li:last-child {width:100%; padding-top:20px}
+#sub02 #section_02 > ul > li > ul {padding-left:20px}
+#sub02 #section_02 > ul > li > ul:nth-child(2) {padding-left:20px}
+#sub02 #section_03 > ul > li:first-child {width:100%}
+#sub02 #section_03 > ul > li:last-child {width:100%; margin-left:0px; margin-top:20px}
+#sub02 #section_03 > ul > li > ul > li {width:50%; padding:20px}
+
+
+#sub03 #section_01 ul li a  {font-size:16px;}
+#sub03 #section_02 ul li {font-size:15px;}
+#sub03  ul.table_ul > li:last-child  > ul{list-style-image: url('../images/sub/dot_m.png'); }
+
+#sub04 table  {font-size:15px;}
+#sub04 table td:last-child ul{list-style-image: url('../images/sub/dot_m.png');}
+}
+
+@media screen and (max-width: 520px) {
+
+#sub03 #section_01 ul li a  {font-size:14px;}
+#sub03 #section_02 ul li {font-size:13px;}
+#sub03 ul.table_ul > li {padding:30px 15px}
+#sub03 ul.table_ul  > li:nth-child(odd){width:105px}
+#sub03 ul.table_ul  > li:nth-child(even){width:calc(100% - 105px)}
+
+#sub04 table  {font-size:13px;}
+#sub04 table th, #sub04 table td {padding:20px 10px;}
+
+#sub04_02 #section_01 .bg {padding:50px 20px;}
+}
+
+
+
+

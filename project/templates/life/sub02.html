@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>수성대학교 시니어골프전공</title>
+		<link rel="stylesheet" href="{% static 'life/css/default.css'%}">
+		<link rel="stylesheet" href="{% static 'life/css/head.css'%}"> 
+		<link rel="stylesheet" href="{% static 'life/css/foot.css'%}"> 
+		<link rel="stylesheet" href="{% static 'life/css/main.css'%}">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+		<script src="{% static 'life/js/jquery-3.6.0.min.js'%}"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="inner">
+                <div class="gnb">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/top/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="./sub01.html">LIFE2.0 사업단</a></li>
+                        <li><a href="./sub02.html">학과안내</a></li>
+                        <li><a href="./sub03.html">대학생활</a></li>
+                        <li><a href="./sub04.html">입학안내</a></li>
+                        <li><a href="https://www.sc.ac.kr" target="_blank" class="blank_link">대학홈페이지</a></li>
+                    </ul>
+					<div id="mob_button" class="btn_mob_button">
+						<div class="line"></div>
+					</div>
+                </div>
+            </div>
+        </div> 
+    </header>
+    
+
+    <sub>
+        <div id="sub02">
+			<div class="inner">
+				<div class="nav">
+					<nav>
+						<h2 class="sub_tit font-45 weight-900 p_font">사회복지상담 전공</h2>
+						<div class="location n_font font-15"><a href="./index.html">홈</a> <span>▶</span> 학과안내 <span>▶</span> 사회복지상담 전공</div>
+					</nav>
+					<ul>
+						<li><a href="./sub02.html" class="font-17 on">사회복지상담 전공</a></li>
+						<li><a href="./sub02_02.html"  class="font-17">웰스킨케어 전공</a></li>
+						<li><a href="./sub02_03.html"  class="font-17">시니어골프 전공</a></li>
+					</ul>
+				</div>
+
+				<section id="section_01">
+					<ul>
+						<li class="font-25 weight-600 p_font">인재상</li>
+						<li><img src="{% static 'life/images/sub/dot02.png'%}"></li>
+						<li class="font-22">Well Life Care 사회복지상담사</li>
+					</ul>
+					<ul>
+						<li class="font-25 weight-600 p_font">교육목표</li>
+						<li><img src="./images/sub/dot02.png"></li>
+						<li class="font-22">인성과 실무역량을 갖춘 웰케어 사회복지상담 양성</li>
+					</ul>
+				</section>
+				<section id="section_02">
+					<ul>
+						<li class="font-25 weight-600 p_font">인재상</li>
+						<li class="font-20">
+							<ul>
+								<li><div>기존사회복지과에서 성인학습자 요구분석과 환경분석을 토대로 특화된 성인친화형 교육과정 개발 및 운영고도화</div></li>
+								<li><div>4차 산업혁명 및 신산업트렌드 반영을 위해 단계적 융합전공 및 신기술직무역량 교육과정 개편</div></li>
+								<li><div>평생교육 관련 지역기초단체와 산업체의 교육과정개발위원회 외부위원 참여로 지역사회기반 평생교육 성인친화형 교육과정 공동운영체계 고도화</div></li>
+								<li><div>산업체 및 지역 유관단체 현장직무분석을 기반으로 현장중심 역량기반 교육과정 개발 및 운영 고도화</div> </li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section id="section_03">
+					<ul>
+						<li class="font-25 weight-600 p_font">학과특성</li>
+						<li class="font-20">
+							<ul>
+								<li><div class="p_font font-35 weight-800">01.</div>전문적이고 특화된 자격과정</li>
+								<li><div class="p_font font-35 weight-800">02.</div>주간반, 야간반, 평생학습자반(주말반)<br>운영으로 학습의 기회 확대</li>
+								<li><div class="p_font font-35 weight-800">03.</div>전공동아리 활동을 통한 자기개발</li>
+								<li><div class="p_font font-35 weight-800">04.</div>우수한 동문</li>
+								<li><div class="p_font font-35 weight-800">05.</div>전담 교수제 운영</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section id="section_04">
+					<div class="btn font-20 weight-600 p_font right"><a href="#none" target="_blank">홈페이지 바로가기</div>
+				</section>
+			</div>
+        </div> 
+    </sub>
+</div>
+
+
+
+    
+<div class="close_menu" id="mobile_menu_close">
+    <!-- 모바일 메뉴 닫기 버튼 -->
+    <span class="close-line1"></span>
+    <span class="close-line2"></span>
+</div>
+<div id="aside">
+    <div class="mobile_menu">
+        <ul>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub01.html">LIFE2.0 사업단</a>
+				<ul class="mb-sub-ul">
+					<li><a href="sub01.html">인사말</a></li>
+					<li><a href="sub01_02.html">사업단 소개</a></li>
+					<li><a href="sub01_03.html">조직안내</a></li>
+					<li><a href="sub01_04.html">홍보영상</a></li>
+				</ul>
+			</li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub02.html">학과안내</a>
+				<ul class="mb-sub-ul">
+					<li><a href="sub02.html">사회복지상담 전공</a></li>
+					<li><a href="sub02_02.html">웰스킨케어 전공</a></li>
+					<li><a href="sub02_02.html">시니어골프 전공</a></li>
+				</ul>
+			</li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub03.html">대학생활</a>
+				<ul class="mb-sub-ul">
+					<li><a href="sub03.html">대학생활</a></li>
+				</ul>
+			</li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub04.html">입학안내</a>
+				<ul class="mb-sub-ul">
+					<li><a href="sub04.html">입시정보</a></li>
+					<li><a href="sub04_02.html">입시요강</a></li>
+				</ul>
+			</li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="https://www.sc.ac.kr/main/" target="_blank">대학홈페이지</a>
+			</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="mask"></div>
+
+
+    <script src="{% static 'life/js/sub.js' %}"></script>
+    <script src="{% static 'life/js/head.js' %}"></script>
+
+    <footer>
+        <div id="footer">
+            <div class="inner">
+                <div class="foot_logo"><img src="./images/foot/footer_logo.png" alt="수성대학교 라이프 사업단 로고"></div>
+                <div class="copyright font-17 weight-300">(c) 2024 SUSEONG UNIVERSITY. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+</script>
+
+    
+</body>
+</html>

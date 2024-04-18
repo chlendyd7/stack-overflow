@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수성대학교 시니어골프전공</title>
+    <link rel="stylesheet" href="{% static 'life/css/default.css'%}">
+    <link rel="stylesheet" href="{% static 'life/css/head.css'%}"> 
+    <link rel="stylesheet" href="{% static 'life/css/foot.css'%}"> 
+    <link rel="stylesheet" href="{% static 'life/css/main.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="{% static 'life/js/jquery-3.6.0.min.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="inner">
+                <div class="gnb">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="{% static '/life/images/top/logo.png'%}" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#about">LIFE2.0 사업단</a></li>
+                        <li><a href="#course">학과안내</a></li>
+                        <li><a href="sub03.html">대학생활</a></li>
+                        <li><a href="#professor">입학안내</a></li>
+                        <li><a href="https://www.sc.ac.kr" target="_blank" class="blank_link">대학홈페이지</a></li>
+                    </ul>
+					<div id="mob_button" class="btn_mob_button">
+						<div class="line"></div>
+					</div>
+                </div>
+            </div>
+        </div>  
+    </header>
+    {% block content %}
+    {% endblock content%}
+
+    <footer>
+        <div id="footer">
+            <div class="inner">
+                <div class="foot_logo"><img src="./images/foot/footer_logo.png" alt="수성대학교 라이프 사업단 로고"></div>
+                <div class="copyright font-17 weight-300">(c) 2024 SUSEONG UNIVERSITY. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

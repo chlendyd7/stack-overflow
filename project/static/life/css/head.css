@@ -1,0 +1,41 @@
+#header{width: 100%; height:80px; position: fixed; z-index: 9999; background: #080808;}
+#header .inner{height: 100%; display: flex; justify-content: space-between; align-items: center;}
+/* 상단 좌측 로고, 메뉴 */
+#header .gnb{width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between;}
+#header .gnb .logo{margin-right: 30px; width: 224px;}
+#header .gnb .logo img{max-width: 100%;}
+
+
+/* 상단 메뉴 */
+#header .gnb > ul.menu{display: flex; flex-wrap: wrap; height: 100%; align-items: center;}
+#header .gnb > ul.menu > li{text-align: center;}
+#header .gnb > ul.menu > li > a{display: inline-block; font-size: 17px; font-weight: 500; color:#fff; text-align: center; padding: 10px 20px;  position: relative; transition: .25s;}
+#header .gnb > ul.menu > li > a.blank_link {background:#f6ac3c; border-radius:50px}
+
+
+
+@media screen and (max-width : 1400px) {
+    #header .gnb > ul.menu > li > a{font-size: 15px;}
+}
+@media screen and (max-width : 1200px) {
+    #header{height: 70px;}
+    #header .gnb .logo{margin-right: 15px;}
+    #header .gnb > ul.menu > li > a{padding:5px 10px;}
+    #header .gnb .logo{width: 200px;}
+}
+@media screen and (max-width : 768px) {
+    #header{height: 60px;}
+    #header .gnb .logo{width: 140px;}
+    #header .gnb > ul.menu{display: none;}
+    #header .icon_menu{display: none;}
+    
+    #header .gnb .logo{margin: 0 auto;}
+}
+
+/* 마우스오버 효과 */
+#header .gnb > ul.menu > li:hover > a{color: #f6ac3c;}
+#header .gnb > ul.menu > li > a.blank_link:hover {color:#fff}
+#header .gnb > ul.menu > li:hover > a::after{visibility: visible; opacity: 1;}
+
+#header .gnb > ul.menu > li:hover > .sub_menu{height: auto; opacity: 1;}
+
