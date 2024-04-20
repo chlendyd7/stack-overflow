@@ -1,0 +1,46 @@
+.main_page{width: 100%;}
+
+.hidden {display: none  !important;}
+
+.section_03 *{color:#fff;  line-height:150%}
+.section_03 h4 {font-size:30px;}
+.section_03 h3 {font-size:55px; font-weight:900; margin-top:50px}
+
+.section_03 #curriculum_tab {display:flex;}
+.section_03 #curriculum_tab li {margin:50px 20px 30px 0px}
+.section_03 #curriculum_tab li a {border:1px solid #fff; font-size:18px; font-weight:600; text-align:center; padding:10px 60px; border-radius:50px}
+.section_03 #curriculum_tab li a.active {background:#ee3e42; border:1px solid #ee3e42}
+
+.section_03 #curriculum_contents {max-width:530px}
+.section_03 #curriculum_contents ul {display:flex; flex-wrap: wrap; min-height:51px}
+.section_03 #curriculum_contents ul a {font-weight:300; font-size:17px}
+.section_03 #curriculum_contents ul a.active  {color:#ee3e42}
+.section_03 #curriculum_contents ul a:after {content:"|"; font-size:17px; margin:0px 10px; color:#fff}
+.section_03 #curriculum_contents ul li:last-child a:after {content:"";}
+
+
+.section_03 .curriculum_list p {font-size:25px;}
+.section_03 .curriculum_list p b {font-weight:600}
+.section_03 .curriculum_list {display:flex; margin-top:100px; align-items: flex-end;}
+.section_03 .curriculum_list > div.txt {width:40%} 
+.section_03 .curriculum_list ul {display:flex;  flex-wrap: wrap; width:60%}
+.section_03 .curriculum_list ul li {width:calc(25% - 20px); text-align:center; background:#1a1a1a;  border-radius:20px; margin:10px; transition: .25s;}
+.section_03 .curriculum_list ul li a {font-size:20px; font-weight:500; padding:30px 10px;; display:block}
+.section_03 .curriculum_list ul li:hover {background:#ee3e42;}
+.section_03 .curriculum_list ul.curriculum_list_02 {display:none}
+
+.pop_lay {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.pop_curriculum {background:#fff; border-radius:20px; padding:50px}
+.pop_curriculum *{color:#000; text-align:center}
+.pop_curriculum h5{font-size:30px; font-weight:800; padding-bottom:30px; border-bottom:1px solid #000}
+.pop_curriculum p{font-size:18px; font-weight:400; padding-top:30px; }
+
+@media screen and (max-width : 1400px) {
+}
+@media screen and (max-width : 1000px) {
+}
+@media screen and (max-width : 768px) {
+}
+
+
+

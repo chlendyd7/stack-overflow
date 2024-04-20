@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수성대학교 라이프사업단</title>
+    <link rel="stylesheet" href="{% static 'life/css/default.css'%}">
+    <link rel="stylesheet" href="{% static 'life/css/head.css'%}"> 
+    <link rel="stylesheet" href="{% static 'life/css/foot.css'%}"> 
+    <link rel="stylesheet" href="{% static 'life/css/sub.css'%}"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="{% static 'life/js/jquery-3.6.0.min.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="inner">
+                <div class="gnb">
+                    <div class="logo">
+                        <a href="{% url 'life_index' %}">
+                            <img src="{% static 'life/images/top/logo.png'%}" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="{% url 'life_sub01' %}">LIFE2.0 사업단</a></li>
+                        <li><a href="{% url 'life_sub02' %}">학과안내</a></li>
+                        <li><a href="{% url 'life_sub03' %}">대학생활</a></li>
+                        <li><a href="{% url 'life_sub04' %}">입학안내</a></li>
+                        <li><a href="https://www.sc.ac.kr" target="_blank" class="blank_link">대학홈페이지</a></li>
+                    </ul>
+					<div id="mob_button" class="btn_mob_button">
+						<div class="line"></div>
+					</div>
+                </div>
+            </div>
+        </div> 
+    </header>
+    {% block content %}
+    {% endblock content %}
+
+<div class="close_menu" id="mobile_menu_close">
+    <!-- 모바일 메뉴 닫기 버튼 -->
+    <span class="close-line1"></span>
+    <span class="close-line2"></span>
+</div>
+<div id="aside">
+    <div class="mobile_menu">
+        <ul>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub01.html">LIFE2.0 사업단</a>
+                <ul class="mb-sub-ul">
+                    <li><a href="sub01.html">인사말</a></li>
+                    <li><a href="sub01_02.html">사업단 소개</a></li>
+                    <li><a href="sub01_03.html">조직안내</a></li>
+                    <li><a href="sub01_04.html">홍보영상</a></li>
+                </ul>
+            </li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub02.html">학과안내</a>
+                <ul class="mb-sub-ul">
+                    <li><a href="sub02.html">사회복지상담 전공</a></li>
+                    <li><a href="sub02_02.html">웰스킨케어 전공</a></li>
+                    <li><a href="sub02_02.html">시니어골프 전공</a></li>
+                </ul>
+            </li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub03.html">대학생활</a>
+                <ul class="mb-sub-ul">
+                    <li><a href="sub03.html">대학생활</a></li>
+                </ul>
+            </li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="./sub04.html">입학안내</a>
+                <ul class="mb-sub-ul">
+                    <li><a href="sub04.html">입시정보</a></li>
+                    <li><a href="sub04_02.html">입시요강</a></li>
+                </ul>
+            </li>
+            <li class="mobile-list">
+                <a class="gnb_1da" href="https://www.sc.ac.kr/main/" target="_blank">대학홈페이지</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="mask"></div>
+
+
+    <script src="{% static 'life/js/sub.js' %}"></script>
+    <script src="{% static 'life/js/head.js' %}"></script>
+
+    <footer>
+        <div id="footer">
+            <div class="inner">
+                <div class="foot_logo"><img src="{% static 'life/images/foot/footer_logo.png' %}" alt="수성대학교 라이프 사업단 로고"></div>
+                <div class="copyright font-17 weight-300">(c) 2024 SUSEONG UNIVERSITY. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+</script>
+
+    
+</body>
+</html>

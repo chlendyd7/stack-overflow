@@ -1,0 +1,41 @@
+{% extends 'life/sub.html' %}
+{% load static %}
+{% block content %}
+    <sub>
+        <div id="sub01">
+			<div class="inner">
+				<div class="nav">
+					<nav>
+						<h2 class="sub_tit font-45 weight-900 p_font">인사말</h2>
+						<div class="location n_font font-15"><a href="{% url 'life_index' %}">홈</a> <span>▶</span> LIFE2.0 사업단 <span>▶</span> 인사말</div>
+					</nav>
+					<ul>
+						<li><a href="{% url 'life_sub01' %}" class="font-17 on">인사말</a></li>
+						<li><a href="{% url 'life_sub01_02' %}"  class="font-17">사업단 소개</a></li>
+						<li><a href="{% url 'life_sub01_03' %}"  class="font-17">조직안내</a></li>
+						<li><a href="{% url 'life_sub01_04' %}"  class="font-17">홍보영상</a></li>
+					</ul>
+				</div>
+
+				<section id="section_01">
+					<div><img src="{% static 'life/images/sub/01_01.png' %}"></div>
+				</section>
+				<section id="section_02">
+					<h3 class="sub_tit font-45 weight-900 p_font">수성대학교 LiFE사업단 페이지 방문을 환영합니다.</h3>
+					<p class="font-18">
+					수성대학교는 2023년 대학의 평생교육체제 지원사업 LIFE2.0에 선정되어, ‘미래사회 평생학습생태계 조성 및 평생교육선도’를 <br class="none">
+					비전으로 차별화된 교육프로그램을 통한 교육경쟁력을 확보하고 있습니다. <br>
+					LiFE융합학부(사회복지상담전공, 웰스킨케어전공, 시니어골프전공) 성인학습자 친화형 교육과정을 개발, 운영하고 있습니다.<br>
+					수성대학교 성인학습자 평생교육체제의 목표는 ‘JUMP UP Model 운영으로 대학 평생교육체제 안착 및 성과 확산’이며 지역수요기반 성인친화형 평생교육체제 고도화, 지역·산업기반 성인친화형 평생교육과정 혁신, 지역맞춤형 성인학습자 취·창업 역량 강화 등 성인학습자의 지속적 역량 개발 지원을 위한 체계적인 평생교육 지원사업으로 지역 인재 육성의 지속적 기반을 제공하고 있습니다.   <br>
+					이를통해 대학의 평생교육 기능 강화 및 성인친화형 대학 체제 전환을 계속 추진하고 있습니다. <br><br>
+
+					수성대학교 LiFE사업단은 평생교육 활성화에 이바지하며,  성인학습자들의 도전이 빛을 바랄 수 있도록 항상 최선을 다하겠습니다.  
+					</p>
+					<div class="weight-800 right font-18">수성대학교 사업단장. <span><img src="{% static 'life/images/sub/01_02.png' %}"></span></div>
+					<div class="clear"></div>
+				</section>
+			</div>
+        </div> 
+    </sub>
+</div>
+{% endblock content %}

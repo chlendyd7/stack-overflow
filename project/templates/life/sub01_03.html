@@ -1,0 +1,32 @@
+{% extends 'life/sub.html' %}
+{% load static %}
+{% block content %}
+    <sub>
+        <div id="sub01_03">
+			<div class="inner">
+				<div class="nav">
+					<nav>
+						<h2 class="sub_tit font-45 weight-900 p_font">조직안내</h2>
+						<div class="location n_font font-15"><a href="{% url 'life_index' %}">홈</a> <span>▶</span> LIFE2.0 사업단 <span>▶</span> 조직안내</div>
+					</nav>
+					<ul>
+						<li><a href="{% url 'life_sub01' %}" class="font-17">인사말</a></li>
+						<li><a href="{% url 'life_sub01_02' %}"  class="font-17">사업단 소개</a></li>
+						<li><a href="{% url 'life_sub01_03' %}"  class="font-17 on">조직안내</a></li>
+						<li><a href="{% url 'life_sub01_04' %}"  class="font-17">홍보영상</a></li>
+					</ul>
+				</div>
+
+				<section id="section_01">
+					<div class="font-28 p_font center">수성대학교</div>
+					<div class="font-30 weight-900 p_font center">평생교육체제 전담조직 운영체계</div>
+				</section>
+				<section id="section_02">
+					<div class="center pc"><img src="{% static 'life/images/sub/01_03.png' %}"></div>
+					<div class="center mo"><img src="{% static 'life/images/sub/01_03m.png' %}"></div>
+				</section>
+			</div>
+        </div> 
+    </sub>
+</div>
+{% endblock content %}

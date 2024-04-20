@@ -16,8 +16,73 @@ sub .nav ul li a {color:#fff; padding:7px 20px; border-radius:50px; border:1px s
 sub .nav ul li a.on {color:#000; background:#fff; border:1px solid #fff;}
 sub .nav ul li a:hover {color:#000; background:#fff; border:1px solid #fff}
 .right {text-align:right}
+.center {text-align:center}
 .btn a {display:inline-block; position: relative;margin: 10px;background-color:#f6ac3c; padding:10px 40px; border-radius:10px}
 .btn a:after {content: '';  position: absolute; top: -5px; bottom: -5px; left: -5px; right: -5px; border: 2px solid #f6ac3c;;  border-radius: 10px;}
+/* 라이프 사업단 */
+#sub01 #section_01 {padding-top:150px}
+#sub01 #section_01 img {width:100%; border-radius:10px}
+#sub01 #section_02 {padding-bottom:150px}
+#sub01 #section_02 .right {margin-top:30px}
+#sub01 #section_02 img {margin-left:10px}
+
+
+#sub01_02 #section_01 {padding-top:150px}
+#sub01_02 #section_01 ul{display:flex; align-items: center; padding-bottom:100px}
+#sub01_02 #section_01 ul li:first-child{width:100px}
+#sub01_02 #section_01 ul li:nth-child(2){padding:0px 100px 0px 20px}
+
+#sub01_02 #section_02 {padding-top:50px}
+#sub01_02 #section_02 ul{display:flex; flex-wrap: wrap;  }
+#sub01_02 #section_02 > ul > li:first-child{width:100px}
+#sub01_02 #section_02 > ul > li:last-child{width:calc(100% - 148px); margin-left:48px}
+#sub01_02 #section_02 > ul > li > ul {flex-wrap: wrap; }
+#sub01_02 #section_02 > ul > li > ul > li {width:calc(25%); border-left:1px solid #fff; padding:20px 20px; margin-bottom:60px}
+
+
+#sub01_02 #section_03 ul{display:flex; flex-wrap: wrap;  margin-left:-25px}
+#sub01_02 #section_03 ul li {text-align:center; background:#161616; padding:40px 20px; border-radius:10px; width:calc(33.3% - 25px); margin-left:25px}
+#sub01_02 #section_03 ul li h4 {border-radius:10px; padding:5px 20px; display:inline-block; line-height:170%; margin-bottom:40px}
+#sub01_02 #section_03 ul li:nth-child(1) h4 {background:#ee3e42}
+#sub01_02 #section_03 ul li:nth-child(2) h4 {background:#c5006f}
+#sub01_02 #section_03 ul li:nth-child(3) h4 {background:#f6ac3c}
+#sub01_02 #section_03 ul li:nth-child(1) div {color:#ee3e42}
+#sub01_02 #section_03 ul li:nth-child(2) div {color:#c5006f}
+#sub01_02 #section_03 ul li:nth-child(3) div {color:#f6ac3c}
+#sub01_02 #section_03 ul li div {padding-bottom:30px}
+#sub01_02 #section_03 ul li p {padding-top:10px}
+#sub01_02 #section_03 ul li div:last-child  {padding-bottom:0px}
+
+
+#sub01_02 #section_04 {padding:60px 0px 150px}
+#sub01_02 #section_04 ul{display:flex; flex-wrap: wrap; align-items: center;}
+#sub01_02 #section_04 ul li:nth-child(odd) {display:flex; align-items: center; padding:30px 20px; border-radius:10px; border:1px solid #f6ac3c; width:calc(25% - 30px)}
+#sub01_02 #section_04 ul li:nth-child(even) {width:40px; text-align:Center}
+#sub01_02 #section_04 ul li img {display: inline-block;}
+#sub01_02 #section_04 ul li div:first-child {margin-right:20px}
+#sub01_02 #section_04 ul li b {color:#f6ac3c}
+
+
+#sub01_02 #section_05 {padding-bottom:30px}
+#sub01_02 #section_05 > ul {display:flex; padding-bottom:120px}
+#sub01_02 #section_05 > ul > li {width:50%}
+#sub01_02 #section_05 > ul > li:last-child {padding-left:20px}
+#sub01_02 #section_05 > ul > li > ul {margin-left:170px; list-style-image: url('../images/sub/dot.png'); }
+#sub01_02 #section_05 > ul > li > ul > li > div {margin-left:10px; margin-top:20px}
+#sub01_02 #section_05 > ul > li > div > ul{display:flex; }
+#sub01_02 #section_05 > ul > li > div > ul > li:first-child {width:150px}
+
+#sub01_03 #section_01 {padding:120px 0px 0px}
+#sub01_03 #section_02 {padding:80px 0px 120px}
+#sub01_03 #section_02 img {width:100%}
+#sub01_03 #section_02 .mo {display:none}
+
+#sub01_04 #section_01 {padding:120px 0px 150px}
+#sub01_04 #section_01 ul {display:flex; flex-wrap: wrap; margin-left:-20px}
+#sub01_04 #section_01 ul li {width:calc(50% - 20px); margin-left:20px}
+#sub01_04 #section_01 ul li .video-container {position:relative; height:0; padding-bottom:56.25%;}
+#sub01_04 #section_01 ul li .video-container iframe {position:absolute; top:0; left:0; width:100%;  height:100%; border-radius:10px}
+
 
 /* 학과안내 */
 #sub02 {padding-bottom:150px}
@@ -75,6 +140,7 @@ sub .nav ul li a:hover {color:#000; background:#fff; border:1px solid #fff}
 #sub04_02 #section_01 .bg .btn {padding-top:30px}
 
 
+
 @media screen and (max-width: 1200px) {
 #sub03 #section_01 ul li a  {font-size:17px;}
 #sub03 ul.table_ul li {font-size:16px;}
@@ -84,12 +150,50 @@ sub .nav ul li a:hover {color:#000; background:#fff; border:1px solid #fff}
 @media screen and (max-width: 1000px) {
 #sub03  ul.table_ul  > li:nth-child(odd){width:20%;}
 #sub03  ul.table_ul  > li:nth-child(even){width:80%;}
+#sub01_02 #section_04 ul li:nth-child(odd) {width:calc(50% - 30px)}
+#sub01_02 #section_04 ul li:nth-child(4) {width:calc(100% - 20px); padding:10px 0px}
+#sub01_02 #section_04 ul li:nth-child(4) img{transform: rotate(130deg);}
+
+#sub01_02 #section_05 > ul {padding-bottom:0px;  flex-wrap: wrap;}
+#sub01_02 #section_05 > ul > li {width:100%; padding-bottom:80px}
+#sub01_02 #section_05 > ul > li:last-child {padding-left:0px}
 
 }
 @media screen and (max-width: 768px) {
+sub h3 {padding:50px 0px 30px}
+sub nav {padding:150px 0px 0px}
 sub .nav {display:block}
 sub .nav ul {margin-top:20px;justify-content: flex-end;}
 sub .nav ul li a {padding:7px 15px;}
+
+#sub01 #section_01 {padding-top:50px}
+#sub01 #section_02 br.none {display:none}
+
+#sub01_02 #section_01 ul {flex-wrap: wrap;}
+#sub01_02 #section_01 ul li:first-child {width:60px}
+#sub01_02 #section_01 ul li:last-child {width:100%; padding-top:20px}
+
+#sub01_02 #section_02 > ul > li:first-child {width:100%}
+#sub01_02 #section_02 > ul > li:last-child {width:100%; margin-left:0px; margin-top:20px}
+#sub01_02 #section_02 > ul > li > ul > li {width:50%; padding:20px}
+
+#sub01_02 #section_03 ul {margin-left:-10px}
+#sub01_02 #section_03 ul li {width:calc(33.3% - 10px); margin-left:10px; padding: 40px 10px;}
+
+#sub01_02 #section_05 > ul > li > div > ul  {flex-wrap: wrap;}
+#sub01_02 #section_05 > ul > li > div > ul > li:first-child {width:100%; padding-bottom:10px}
+#sub01_02 #section_05 > ul > li > div > ul > li {width:100%}
+#sub01_02 #section_05 > ul > li > ul {margin-left:20px;}
+
+
+#sub01_03 #section_02 .mo {display:block}
+#sub01_03 #section_02 .pc {display:none}
+
+#sub01_04 #section_01 ul {display:flex; flex-wrap: wrap; margin-left:0px}
+#sub01_04 #section_01 ul li {width:100%; margin-left:0px; margin-bottom:20px}
+
+
+
 
 #sub02 #section_01 ul {flex-wrap: wrap;}
 #sub02 #section_01 ul li:last-child {width:100%; padding-top:20px}
@@ -111,6 +215,14 @@ sub .nav ul li a {padding:7px 15px;}
 }
 
 @media screen and (max-width: 520px) {
+sub .nav ul {flex-direction: column;}
+sub .nav ul li {display:flex; justify-content: flex-end; margin:5px 0px}
+sub .nav ul li a{display:inline-block; min-width:140px; text-align:center}
+#sub01_02 #section_04 ul li:nth-child(even) {width:calc(100%); padding:10px 0px}
+#sub01_02 #section_04 ul li:nth-child(even) img{transform: rotate(90deg);}
+#sub01_02 #section_04 ul li:nth-child(odd) {width:calc(100%); }
+#sub01_02 #section_04 ul li:nth-child(4) {width:100%; padding:10px 0px}
+#sub01_02 #section_04 ul li:nth-child(4) img{transform: rotate(90deg);}
 
 #sub03 #section_01 ul li a  {font-size:14px;}
 #sub03 #section_02 ul li {font-size:13px;}

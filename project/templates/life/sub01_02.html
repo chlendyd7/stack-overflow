@@ -1,0 +1,200 @@
+{% extends 'life/sub.html' %}
+{% load static %}
+{% block content %}
+    <sub>
+        <div id="sub01_02">
+			<div class="inner">
+				<div class="nav">
+					<nav>
+						<h2 class="sub_tit font-45 weight-900 p_font">사업단 소개</h2>
+						<div class="location n_font font-15"><a href="{% url 'life_index' %}">홈</a> <span>▶</span> LIFE2.0 사업단 <span>▶</span> 사업단 소개</div>
+					</nav>
+					<ul>
+						<li><a href="{% url 'life_sub01' %}" class="font-17">인사말</a></li>
+						<li><a href="{% url 'life_sub01_02' %}"  class="font-17 on">사업단 소개</a></li>
+						<li><a href="{% url 'life_sub01_03' %}"  class="font-17">조직안내</a></li>
+						<li><a href="{% url 'life_sub01_04' %}"  class="font-17">홍보영상</a></li>
+					</ul>
+				</div>
+
+				<section id="section_01">
+					<ul>
+						<li class="font-25 weight-600 p_font">비전</li>
+						<li><img src="{% static 'life/images/sub/dot02.png' %}"></li>
+						<li class="font-22">미래사회 평생학습생태계 조성 평생교육 선도대학 </li>
+					</ul>
+					<ul>
+						<li class="font-25 weight-600 p_font">목표</li>
+						<li><img src="{% static 'life/images/sub/dot02.png' %}"></li>
+						<li class="font-22">JUMP UP Model 운영으로 대학 평생교육체제 안착 및 성과확산 </li>
+					</ul>
+				</section>
+				<section id="section_02">
+					<ul>
+						<li class="font-25 weight-600 p_font">추진전략</li>
+						<li class="font-20">
+							<ul>
+								<li><div class="p_font font-35 weight-800">01.</div>지역수요기반 성인친화형<br> 평생교육체제 고도화</li>
+								<li><div class="p_font font-35 weight-800">02.</div>지역·산업기반 성인친화형<br> 평생교육과정 혁신</li>
+								<li><div class="p_font font-35 weight-800">03.</div>지역맞춤형 성인학습자<br> 취·창업 역량 강화</li>
+								<li><div class="p_font font-35 weight-800">04.</div>공유대학 체제 구축<br>(대학·학과·학생·지역간 벽 해제)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section id="section_03">
+					<ul>
+						<li>
+							<h4 class="box p_font font-20 weight-800">JE</h4>
+							<div class="font-25 p_font">JE1<br>
+								<p class="font-16 white">성인친화형 교육단위 개선 및 확충 </p>
+							</div>
+							<div class="font-25 p_font">JE2<br>
+								<p class="font-16 white">성인친화형 유연한  학사제도 활성화 </p>
+							</div>
+							<div class="font-25 p_font">JE3<br>
+								<p class="font-16 white">성인학습지원센터 운영 활성화</p>
+							</div>
+							<div class="font-25 p_font">JE4<br>
+								<p class="font-16 white">성인학습자 기초역량강화 지원강화</p>
+							</div>
+							<div class="font-25 p_font">JE5<br>
+								<p class="font-16 white">성인학습자 전담교직원 확충</p>
+							</div>
+							<div class="font-25 p_font">JE6<br>
+								<p class="font-16 white">성인친화형 학비부담경감제도 확충</p>
+							</div>
+						</li>
+						<li>
+							<h4 class="box p_font font-20 weight-800">UE</h4>
+							<div class="font-25 p_font">UE1<br>
+								<p class="font-16 white">성인친화형 교육과정 개발 및 개편</p>
+							</div>
+							<div class="font-25 p_font">UE2<br>
+								<p class="font-16 white">성인친화형비학위교육과정 개발 및 개편</p>
+							</div>
+							<div class="font-25 p_font">UE3<br>
+								<p class="font-16 white">성인학습자 교육질관리 강화</p>
+							</div>
+							<div class="font-25 p_font">UE4<br>
+								<p class="font-16 white">성인친화형 교육방법 혁신</p>
+							</div>
+							<div class="font-25 p_font">UE5<br>
+								<p class="font-16 white">수요맞춤형 융복합교육과정 구축</p>
+							</div>
+							<div class="font-25 p_font">UE6<br>
+								<p class="font-16 white">성인친화적 교육인프라 고도화</p>
+							</div>
+						</li>
+						<li>
+							<h4 class="box p_font font-20 weight-800">ME</h4>
+							<div class="font-25 p_font">ME1<br>
+								<p class="font-16 white">전문가 멘토링 지원 강화 </p>
+							</div>
+							<div class="font-25 p_font">ME2<br>
+								<p class="font-16 white">성인학습자 맞춤형 상담체계 구축</p>
+							</div>
+							<div class="font-25 p_font">ME3<br>
+								<p class="font-16 white">성인학습자 표준현장실습 활성화</p>
+							</div>
+							<div class="font-25 p_font">ME4<br>
+								<p class="font-16 white">성인학습자 취업역량 강화</p>
+							</div>
+							<div class="font-25 p_font">ME5<br>
+								<p class="font-16 white">성인학습자 창업역량강화</p>
+							</div>
+							<div class="font-25 p_font">ME6<br>
+								<p class="font-16 white">성인학습자 학습지원 강화</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section id="section_04">
+					<ul>
+						<li>
+							<div class="font-20 weight-800"><b>J</b>E</div>
+							<div class="font-16 weight-300">Joing up<br>Education system</div>
+						</li>
+						<li><img src="{% static 'life/images/sub/01_arrow.png' %}"></li>
+						<li>
+							<div class="font-20 weight-800"><b>U</b>E</div>
+							<div class="font-16 weight-300">Upgrade<br>Education curriculum</div>
+						</li>
+						<li><img src="{% static 'life/images/sub/01_arrow.png' %}"></li>
+						<li>
+							<div class="font-20 weight-800"><b>M</b>E</div>
+							<div class="font-16 weight-300">Maximizing<br>Employability</div>
+						</li>
+						<li><img src="{% static 'life/images/sub/01_arrow.png' %}"></li>
+						<li>
+							<div class="font-20 weight-800"><b>P</b>E</div>
+							<div class="font-16 weight-300">Partnership-based<br>Engagement</div>
+						</li>
+					</ul>
+				</section>
+				<section id="section_05">
+					<ul>
+						<li>
+							<div>
+								<ul>
+									<li class="font-25 weight-900 p_font">2023</li>
+									<li class="font-20 weight-500 p_font">기본 인프라 구축/학사운영 및 교육과정 내실화구축</li>
+								</ul>
+							</div>
+							<ul  class="font-20">
+								<li><div>평생학습체제를 위한 제도 및 규정 구축</div></li>
+								<li><div>평생직업교육처 조직 개편</div></li>
+								<li><div>유연한 학사운영제도 정책 마련</div></li>
+							</ul>
+						</li>
+						<li>
+							<div>
+								<ul>
+									<li class="font-25 weight-900 p_font">2024</li>
+									<li class="font-20 weight-500 p_font">평생교육체제고도화</li>
+								</ul>
+							</div>
+							<ul  class="font-20">
+								<li><div>학교 순환형 교육과정 운영 고도화</div></li>
+								<li><div>학사운영 및 교육과정 유연성 확대</div></li>
+								<li><div>지역사회 발전 연계 공유·협업 플랫폼 구축</div></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul>
+						<li>
+							<div>
+								<ul>
+									<li class="font-25 weight-900 p_font">2025.05</li>
+									<li class="font-20 weight-500 p_font">대학 내·외 평생교육 교류·협력<br>대학평생교육 성과공유/확산</li>
+								</ul>
+							</div>
+							<ul  class="font-20">
+								<li><div>일터·학교 순환형 교육과정 기반 인재양성 확산</div></li>
+								<li><div>대학·지역 연계한 공유 및 협업 활성화</div></li>
+								<li><div>대학 내·외 융화 및 교류·협력 확산 및 빅데이터 활용</div></li>
+							</ul>
+						</li>
+						<li>
+							<div>
+								<ul>
+									<li class="font-25 weight-900 p_font">2025~</li>
+									<li class="font-20 weight-500 p_font">대학-지자체 연계 RISE 사업</li>
+								</ul>
+							</div>
+							<ul  class="font-20">
+								<li><div>대학지역 동반 성장을 위한 공유 협력 선순환 체계 확산</div></li>
+								<li><div>평생직업교육플랫폼(D-STAR Platform) 구축 및 운영 </div></li>
+								<li><div>생애주기별 HR플랫폼 체계 구축</div></li>
+								<li><div>지역사회 공헌 프로젝트</div></li>
+								<li><div>On-site 창업 플랫폼 구축으로 지역정주 취업률 제고</div></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+        </div> 
+    </sub>
+</div>
+{% endblock content %}

@@ -1,49 +1,12 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>수성대학교 라이프사업단</title>
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/head.css"> 
-    <link rel="stylesheet" href="css/foot.css"> 
-    <link rel="stylesheet" href="css/sub.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-</head>
-<body>
-    <header>
-        <div id="header">
-            <div class="inner">
-                <div class="gnb">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="./images/top/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    <ul class="menu">
-                        <li><a href="./sub01.html">LIFE2.0 사업단</a></li>
-                        <li><a href="./sub02.html">학과안내</a></li>
-                        <li><a href="./sub03.html">대학생활</a></li>
-                        <li><a href="./sub04.html">입학안내</a></li>
-                        <li><a href="https://www.sc.ac.kr" target="_blank" class="blank_link">대학홈페이지</a></li>
-                    </ul>
-					<div id="mob_button" class="btn_mob_button">
-						<div class="line"></div>
-					</div>
-                </div>
-            </div>
-        </div> 
-    </header>
-    
-
+{% extends 'life/sub.html' %}
+{% load static %}
+{% block content %}
     <sub>
         <div id="sub03">
 			<div class="inner">
 				<nav>
 					<h2 class="sub_tit font-45 weight-900 p_font">대학생활</h2>
-					<div class="location n_font font-15"><a href="./index.html">홈</a> <span>▶</span> 대학생활</div>
+					<div class="location n_font font-15"><a href="{% url 'life_index' %}">홈</a> <span>▶</span> 대학생활</div>
 				</nav>
 				<section id="section_01">
 					<ul>
@@ -78,9 +41,9 @@
 					<div class="swiper_03_01">
 					    <div class="swiper-container">
 					        <div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="./images/sub/03_01.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_02.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_03.png"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_01.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_02.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_03.png' %}"></div>
 							</div>
 							<div class="arrow-box">
 								<div class="swiper-button-prev"></div>
@@ -113,10 +76,10 @@
 					<div class="swiper_03_02">
 					    <div class="swiper-container">
 					        <div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="./images/sub/03_04.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_05.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_06.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_07.png"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_04.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_05.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_06.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_07.png' %}"></div>
 							</div>
 							<div class="arrow-box">
 								<div class="swiper-button-prev"></div>
@@ -146,10 +109,10 @@
 					<div class="swiper_03_03">
 					    <div class="swiper-container">
 					        <div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="./images/sub/03_08.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_09.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_10.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_11.png"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_08.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_09.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_10.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_11.png' %}"></div>
 							</div>
 							<div class="arrow-box">
 								<div class="swiper-button-prev"></div>
@@ -181,10 +144,10 @@
 					<div class="swiper_03_04">
 					    <div class="swiper-container">
 					        <div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="./images/sub/03_12.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_13.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_14.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_15.png"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_12.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_13.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_14.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_15.png' %}"></div>
 							</div>
 							<div class="arrow-box">
 								<div class="swiper-button-prev"></div>
@@ -215,10 +178,10 @@
 					<div class="swiper_03_05">
 					    <div class="swiper-container">
 					        <div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="./images/sub/03_16.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_17.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_18.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_19.png"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_16.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_17.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_18.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_19.png' %}"></div>
 							</div>
 							<div class="arrow-box">
 								<div class="swiper-button-prev"></div>
@@ -248,10 +211,10 @@
 					<div class="swiper_03_06">
 					    <div class="swiper-container">
 					        <div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="./images/sub/03_20.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_21.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_22.png"></div>
-								<div class="swiper-slide"><img src="./images/sub/03_23.png"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_20.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_21.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_22.png' %}"></div>
+								<div class="swiper-slide"><img src="{% static 'life/images/sub/03_23.png' %}"></div>
 							</div>
 							<div class="arrow-box">
 								<div class="swiper-button-prev"></div>
@@ -264,71 +227,4 @@
         </div> 
     </sub>
 </div>
-
-<div class="close_menu" id="mobile_menu_close">
-    <!-- 모바일 메뉴 닫기 버튼 -->
-    <span class="close-line1"></span>
-    <span class="close-line2"></span>
-</div>
-<div id="aside">
-    <div class="mobile_menu">
-        <ul>
-            <li class="mobile-list">
-                <a class="gnb_1da" href="./sub01.html">LIFE2.0 사업단</a>
-				<ul class="mb-sub-ul">
-					<li><a href="sub01.html">인사말</a></li>
-					<li><a href="sub01_02.html">사업단 소개</a></li>
-					<li><a href="sub01_03.html">조직안내</a></li>
-					<li><a href="sub01_04.html">홍보영상</a></li>
-				</ul>
-			</li>
-            <li class="mobile-list">
-                <a class="gnb_1da" href="./sub02.html">학과안내</a>
-				<ul class="mb-sub-ul">
-					<li><a href="sub02.html">사회복지상담 전공</a></li>
-					<li><a href="sub02_02.html">웰스킨케어 전공</a></li>
-					<li><a href="sub02_02.html">시니어골프 전공</a></li>
-				</ul>
-			</li>
-            <li class="mobile-list">
-                <a class="gnb_1da" href="./sub03.html">대학생활</a>
-				<ul class="mb-sub-ul">
-					<li><a href="sub03.html">대학생활</a></li>
-				</ul>
-			</li>
-            <li class="mobile-list">
-                <a class="gnb_1da" href="./sub04.html">입학안내</a>
-				<ul class="mb-sub-ul">
-					<li><a href="sub04.html">입시정보</a></li>
-					<li><a href="sub04_02.html">입시요강</a></li>
-				</ul>
-			</li>
-            <li class="mobile-list">
-                <a class="gnb_1da" href="https://www.sc.ac.kr/main/" target="_blank">대학홈페이지</a>
-			</li>
-        </ul>
-    </div>
-</div>
-
-
-<div class="mask"></div>
-
-
-    <script src="./js/sub.js"></script>
-    <script src="./js/head.js"></script>
-
-    <footer>
-        <div id="footer">
-            <div class="inner">
-                <div class="foot_logo"><img src="./images/foot/footer_logo.png" alt="수성대학교 라이프 사업단 로고"></div>
-                <div class="copyright font-17 weight-300">(c) 2024 SUSEONG UNIVERSITY. All rights reserved.</div>
-            </div>
-        </div>
-    </footer>
-
-<script>
-</script>
-
-    
-</body>
-</html>
+{% endblock content %}
