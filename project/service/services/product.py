@@ -1,6 +1,6 @@
 from django.db import transaction
 
-from project.service.models.product import Product
+from service.models.product import Product
 
     
 class ProductService:
@@ -17,4 +17,5 @@ class ProductService:
         category_id=None,
     ) -> Product:
         pass
+
 
