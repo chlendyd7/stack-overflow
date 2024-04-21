@@ -1,0 +1,720 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수성대학교 웰스킨케어전공</title>
+    <link rel="stylesheet" href="{% static 'beauty/css/default.css'%}">
+    <link rel="stylesheet" href="{% static 'beauty/css/head.css'%}"> 
+    <link rel="stylesheet" href="{% static 'beauty/css/foot.css'%}"> 
+    <link rel="stylesheet" href="{% static 'beauty/css/main.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="{% static 'beauty/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="inner">
+                <div class="gnb">
+                    <div class="logo">
+                        <a href="{% url 'beauty_index' %}">
+                            <img src="{% static 'golf/images/top/logo.png'%}" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#about">학과소개</a></li>
+                        <li><a href="#course">졸업 후 진로</a></li>
+                        <li><a href="#certification">자격증</a></li>
+                        <li><a href="#professor">교수소개</a></li>
+                        <li><a href="#partner">협력기관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </header>
+    
+
+    <main>
+        <div class="main_page">
+            <!-- 메인 배너 -->
+            <div class="section_01">
+                <div class="banner_top">
+                    <div class="inner">
+                        <div class="flr_txt">
+                            <h2 class="font-30 weight-500 point_f">DEVELOPING OF FIELD-ORIENTED <br>BEAUTY SPECIALISTS</h2>
+                        </div>
+                        <div class="fll_txt">
+                            <h1 class="weight-800 point_f point_c">WELLSKIN CARE <br>MAJOR</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_img">
+                    <div class="inner">
+                        <h3 class="font-22 weight-600">뷰티전문가로의 새로운 출발! <br> 웰스킨케어전공에서 아름다움을 향한 평생 여정을 지금 시작하세요!</h3>
+                        <h2 class="font-40 weight-900 point_f">웰스킨케어 전공</h2>
+                    </div>
+                </div>
+                <div class="scroll_down font-16">SCROLL DOWN <br>▼</div>
+            </div> 
+
+    
+            <!-- 학과소개 -->
+            <div class="section_02" id="about">
+                <div class="inner">
+                    <div class="txt_ani">
+                        <!--  -->
+                        <div class="box_ani">
+                            <p class="font-100 weight-800 point_f">네일샵 취업/창업</p>
+                            <p class="font-100 weight-800 point_f">왁싱샵 취업/창업</p>
+                            <p class="font-100 weight-800 point_f">반영구화장 취업/창업</p>
+                            <p class="font-100 weight-800 point_f">피부과</p>
+                            <p class="font-100 weight-800 point_f">성형외과 동병원 내 피부관리사</p>
+                            <p class="font-100 weight-800 point_f">병원코디네이터</p>
+                            <p class="font-100 weight-800 point_f">피부전문관리실</p>
+                        </div>
+                        <p class="font-70 weight-500 point_f">에 관심있다면</p>
+                    </div>
+                    <ul class="about_list">
+                        <li>
+                            <img src="{% static 'beauty/images/main/about_icon01.png' %}" alt="about_icon01">
+                            <p class="font-22 weight-500 point_f">화장품, 네일&두피, 왁싱, <br class="none">속눈썹, 반영구 창업</p>
+                        </li>
+                        <li>
+                            <img src="{% static 'beauty/images/main/about_icon02.png' %}" alt="about_icon02">
+                            <p class="font-22 weight-500 point_f">미용사 종합면허 취득 <br class="none">(피부, 네일, 헤어, 메이크업)</p>
+                        </li>
+                        <li>
+                            <img src="{% static 'beauty/images/main/about_icon03.png' %}" alt="about_icon03">
+                            <p class="font-22 weight-500 point_f">메딘컬 스킨케어, 스파테라피 <br class="none">전문가 과정</p>
+                        </li>
+                    </ul>
+
+
+                    <div class="about_flex">
+                        <div class="left_info">
+                            <h3 class="font-45 weight-900 point_f">DEVELOPING OF FIELD-ORIENTED <br>BEAUTY SPECIALISTS</h3>
+                            <p class="font-17 weight-300">Well Life Care 뷰티스페셜리스트 <br class="none">
+                                뷰티전문가로의 새로운 출발! 웰스킨케어전공에서 아름다움을 향한 평생 여정을 지금 시작하세요! </p>
+                            <span class="font-25 weight-500 point_f">인성과 실무를 겸비한 융합웰스킨 <br> <b>현장중심</b>의 <br> <b>SMART 뷰티스페셜리스트</b> 양성</span>
+                        </div>
+                        <div class="right_button">
+                            <button class="cclum_btn ccm font-17 weight-500 point_f">CURRICULUM <br><b class="font-22">교육과정 OPEN</b> <i>→</i></button>
+                            <button class="cclum_btn degree font-17 weight-500 point_f">CURRICULUM <br><b class="font-22">비학위 과정 : JUMP UP 디그리</b> <i>→</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    
+            <div class="pop_bg"></div>
+            <div class="cclum_popup ccm">
+                <div class="cclum_ctt">
+                    <table>
+                        <caption>웰스킨케어전공 교육과정 로드맵</caption>
+                        <tr>
+                            <th>전공직무</th>
+                            <th class="bold">1학년 1학기</th>
+                            <th class="bold">1학년 2학기</th>
+                            <th class="bold">2학년 1학기</th>
+                            <th class="bold">2학년 2학기</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="bold">직무공통</td>
+                            <td>피부과학</td>
+                            <td>미용보건위생</td>
+                            <td>고객서비스실무</td>
+                            <td>뷰티테라피실무실습</td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>미용해부생리학</td>
+                            <td>미용창업4.0캡스톤디자인</td>
+                        </tr>
+                        
+                        <tr class="line">
+                            <td rowspan="3" class="bold">뷰티테라피 <br>(직무1)</td>
+                            <td>기초네일</td>
+                            <td>응용네일</td>
+                            <td>네일아트</td>
+                            <td>네일실무</td>
+                        </tr>
+                        <tr>
+                            <td>메디스킨케어</td>
+                            <td>왁싱실무</td>
+                            <td>반영구화장실무</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>반영구화장</td>
+                            <td>문제성피부메디케어</td>
+                            <td></td>
+                        </tr>
+
+                        <tr class="line">
+                            <td rowspan="3" class="bold">피부관리 <br>(직무2)</td>
+                            <td>얼굴관리</td>
+                            <td>응용얼굴관리</td>
+                            <td>두피관리</td>
+                            <td>유러피언스파테라피</td>
+                        </tr>
+                        <tr>
+                            <td>몸매관리</td>
+                            <td>응용몸매관리</td>
+                            <td>근육학실무</td>
+                            <td>오리엔탈스파테라피</td>
+                        </tr>
+                        <tr>
+                            <td>림프관리</td>
+                            <td>피부미용기기관리</td>
+                            <td></td>
+                            <td>아로마&화장품사용</td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <caption>웰스킨케어전공 교육과정 로드맵</caption>
+                        <tr>
+                            <th class="bold">교양 교육과정</th>
+                            <th class="bold">웰케어 융합전공과정</th>
+                            <th class="bold">비교과</th>
+
+                        </tr>
+                        <tr>
+                            <td>자기계발과 <br>진로코칭</td>
+                            <td>WH(6학점) + WB(6학점)</td>
+                            <td>반영구전문가 <br>특강</td>
+                        </tr>
+                        <tr>
+                            <td>경력개발과 <br>취업코칭</td>
+                            <td><span>웰스포츠뷰티<br> 융합전공(MD) <br>(12학점)</span></td>
+                            <td>스파체험 및 견학</td>
+                        </tr>
+                        <tr>
+                            <td>조직문화와 <br>직업윤리</td>
+                            <td rowspan="3">
+                                <div class="bd">
+                                    <p>피부과학</p>
+                                    <p>아로마&화장품사용</p>
+                                </div>
+                                +
+                                <div class="bd">
+                                    <p>생활체육론</p>
+                                    <p>노인체육론</p>
+                                </div>
+                            </td>
+                            <td>뷰티테라피 <br>전문가특강</td>
+                        </tr>
+                        <tr>
+                            <td>인성과 <br>리더십</td>
+                            <td>두피디자인코디네이터 <br>전문가특강</td>
+                        </tr>
+                        <tr>
+                            <td>비즈니스<br> 커뮤니케이션</td>
+                            <td>뷰티테라피 산업체 <br>체험 및 견학</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>창업관련전문가 <br>특강</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>캡스톤디자인 멘토링 <span>LiFE-IST 인증</span></td>
+                        </tr>
+    
+                    </table>
+                </div>
+                <div class="close"></div>
+            </div>
+            <div class="cclum_popup degree">
+                <div class="cclum_ctt">
+                    <table>
+                        <caption>비학위과정 : Jump Up 다그리</caption>
+                        <tr>
+                            <th class="bold" colspan="4">비학위과정 : Jump up 디그리</th>
+                        </tr>
+                        <tr>
+                            <td class="bold">학위과정<br> 보완과정</td>
+                            <td>왁싱코디네이터 과정</td>
+                            <td class="bold" rowspan="2">비교과과정 <br>연계운영</td>
+                            <td rowspan="2">재학생 대상</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">일자리창출<br> 취창업과정</td>
+                            <td class="bdr">- 반영구화장 창업과정<br> - 눈썹전문가 취창업과정</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">학점연계형<br>과정</td>
+                            <td>- 맞춤형화장품 조제관리사 자격과정 <br> - K-MOOC : 알기쉬운 한방화장품 제조학(13시간) <br>- K-MOOC : 맞춤형 화장품의 이해(15시간)</td>
+                            <td class="bold">아로마&화장품 사용<br>(학점인정)</td>
+                            <td>지역주민 재직자<br> 재학생 대상</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">직무역량강화<br>자격증과정</td>
+                            <td>- 퍼스널컬러 자격과정 <br> - 헤드스파 코디네이션 과정 <br> - AI융복합 뷰티 인플루언서/크리에이터</td>
+                            <td rowspan="2" colspan="2">지역주민 대상 <br>재직자 대상</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">첨단산업관련 <br>교육과정</td>
+                            <td class="bdr">- 메디뷰티 Maker School 과정</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="close"></div>
+            </div>
+
+            <!-- 졸업 후 진로 -->
+            <div class="section_03" id="course">
+                <div class="inner">
+                    <ul id="curriculum_tab">
+                        <li>나는</li>
+                        <li><a href="#" data-field="field_01" class="active">뷰티테라피</a></li>
+                        <li><a href="#" data-field="field_02">피부관리</a></li>
+                        <li>분야의</li>
+                    </ul>
+    
+                    <div id="curriculum_contents">
+                        <ul id="curriculum_cate_ul_field_01" class="field_01">
+                            <li><a href="#" data-field="field01_01" class="active">병원코디네이터</a></li>
+                            <li><a href="#" data-field="field01_01">왁싱샵 취업/창업</a></li>
+                            <li><a href="#" data-field="field01_01">반영구화장 취업/창업</a></li>
+                            <li><a href="#" data-field="field01_01">피부과</a></li>
+                            <li><a href="#" data-field="field01_01">성형외과 등병원 내 피부관리사</a></li>
+                            <li><a href="#" data-field="field01_01">병원코디네이터</a></li>
+                            <li>가 되고싶어요</li>
+                        </ul>
+        
+                        <ul id="curriculum_cate_ul_field_02" class="field_02 hidden">
+                            <li><a href="#" data-field="field02_01" class="active">반영구화장 분야 취업 및 창업</a></li>
+                            <li><a href="#" data-field="field02_01">피부전문관리실</a></li>
+                            <li><a href="#" data-field="field02_01">스파테라피스트</a></li>
+                            <li><a href="#" data-field="field02_01">피부전문관리실</a></li>
+                            <li><a href="#" data-field="field02_01">두피관리 병원</a></li>
+                            <li><a href="#" data-field="field02_01">아로마전문샵</a></li>
+                            <li><a href="#" data-field="field02_01">교육전문가</a></li>
+                            <li>가 되고싶어요</li>
+                        </ul>
+                    </div>
+    
+                    <div class="curriculum_list">	
+                        <ul  class="curriculum_list_01">
+                            <li data-field="기초네일"><a href="#none">기초네일</a></li>
+                            <li data-field="응용네일"><a href="#none">응용네일</a></li>
+                            <li data-field="네일아트"><a href="#none">네일아트</a></li>
+                            <li data-field="네일실무"><a href="#none">네일실무</a></li>
+                            <li data-field="왁싱실무"><a href="#none">왁싱실무</a></li>
+                            <li data-field="피부미용기기관리"><a href="#none">피부미용기기관리</a></li>
+                            <li data-field="문제성피부메디케어"><a href="#none">문제성피부메디케어</a></li>
+                            <li data-field="메디스킨케어"><a href="#none">메디스킨케어</a></li>
+                            <li data-field="미용보건위생 "><a href="#none">미용보건위생</a></li>
+                            <li data-field="미용해부생리학"><a href="#none">미용해부생리학</a></li>
+                            <li data-field="피부과학"><a href="#none">피부과학</a></li>
+                            <li data-field="고객서비스실무"><a href="#none">고객서비스실무</a></li>
+                            <li data-field="뷰티테라피 현장실무"><a href="#none">뷰티테라피 현장실무</a></li>
+                            <li data-field="미용창업 4.0 캡스톤디자인"><a href="#none">미용창업 4.0 캡스톤디자인</a></li>
+                        </ul>
+        
+                        <ul  class="curriculum_list_02">
+                            <li data-field="얼굴관리"><a href="#none">얼굴관리</a></li>
+                            <li data-field="응용얼굴관리"><a href="#none">응용얼굴관리</a></li>
+                            <li data-field="근육학실무"><a href="#none">근육학실무</a></li>
+                            <li data-field="몸매관리"><a href="#none">몸매관리</a></li>
+                            <li data-field="응용몸매관리"><a href="#none">응용몸매관리</a></li>
+                            <li data-field="오리엔탈스파테라피"><a href="#none">오리엔탈스파테라피</a></li>
+                            <li data-field="유러피언스파테라피"><a href="#none">유러피언스파테라피</a></li>
+                            <li data-field="림프관리"><a href="#none">림프관리</a></li>
+                            <li data-field="두피관리"><a href="#none">두피관리</a></li>
+                            <li data-field="아로마&화장품사용"><a href="#none">아로마&화장품사용</a></li>
+                            <li data-field="스포츠사회학"><a href="#none">스포츠사회학</a></li>
+                            <li data-field="미용보건위생 "><a href="#none">미용보건위생</a></li>
+                            <li data-field="미용해부생리학"><a href="#none">미용해부생리학</a></li>
+                            <li data-field="피부과학"><a href="#none">피부과학</a></li>
+                            <li data-field="고객서비스실무"><a href="#none">고객서비스실무</a></li>
+                            <li data-field="뷰티테라피 현장실무"><a href="#none">뷰티테라피 현장실무</a></li>
+                            <li data-field="미용창업 4.0 캡스톤디자인"><a href="#none">미용창업 4.0 캡스톤디자인</a></li>
+                        </ul>
+                </div>
+            </div>
+    
+            <!-- 자격증 -->
+            <div class="section_04" id="certification">
+                <div class="bg_info">
+                    <div class="inner">
+                        <div class="right_txt">
+                            <h3 class="font-70 weight-800 point_f">ROOTING YOUR DREAM</h3>
+                            <h4 class="font-80 weight-800 point_f point_c">WELLSKIN CARE</h4>
+                            <p class="font-25 weight-500 point_f">꿈을 위한, 새로운 도전을 위한 선택 <br> <b>시니어골프 전공</b></p>
+                        </div>
+                    </div>
+                    <img src="{% static 'beauty/images/main/center_bg.png' %}" alt="golf bg">
+                </div>
+                <div class="inner">
+                    <div class="certifi_swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">미용사(종합) 면허증</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국산업인력공단</span>
+                                        <p class="font-16 weight-300">수성대학교 웰스킨케어 전공을 졸업하면 미용사(종합)면허증 발급 가능, 헤어, 피부, 메이크업, 네일 분야 창업과 직무종사 가능 </p>
+                                        <a href="https://www.kbda.or.kr/?contentId=afaefec678aea9eb03bc8daa8a4474a1" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">미용사(피부)</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국산업인력공단</span>
+                                        <p class="font-16 weight-300">피부미용 전문인력양성을 위한 국가자격증, 자격증 취득 후 피부관리 업무 수행, 창업 또는 취업 가능</p>
+                                        <a href="https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=7947&gSite=Q&gId" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">방과후 실기교사</h4>
+                                        <span class="font-17 weight-600">시행처 : 교육부</span>
+                                        <p class="font-16 weight-300">학생들에게 미용분야 직무를 가르치고 지원하여 프로그램의 특성에 맞춰 교육을 진행할 수 있는 역할을 수행</p>
+                                        <a href="https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=4027" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">스킨케어 교육강사</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국산업인력공단</span>
+                                        <p class="font-16 weight-300">피부관리분야의 전문적인 이론과 실무기술을 지도할 수 있는 역할을 수행</p>
+                                        <a href="https://m.smc365.ac:4463/curriculum/curriculum01.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">시니어병원코디네이터</h4>
+                                        <span class="font-17 weight-600">시행처 : 병원코디네이터협회</span>
+                                        <p class="font-16 weight-300">시니어병원코디네이터에 대한 전문적인 지식을 바탕으로 병원의 특성을 이해하고 의료기관에서 필요한 병원조직관리, 병원마케팅, 고객관리 및 고객상담의 각종 관리기법을 활용하여 고객 중심의 맞춤형 서비스를 제공하는 직무를 수행</p>
+                                        <a href="https://www.khca.or.kr/main/" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">성형상담사</h4>
+                                        <span class="font-17 weight-600">시행처 : 민간</span>
+                                        <p class="font-16 weight-300">병원 운영에 관한 전문적인 지식을 바탕으로 고객상담, 병원 운영기획, 조직 활성화, 내부고객관리, 병원 마케팅 등 각종 관리기법을 활용하여 고객 중심의 맞춤형 서비스를 제공하며 관련기관에서 교육프로그램을 기획하고 운영하는 전문 강사로서 직무를 수행</p>
+                                        <a href="http://www.dssh.kr/" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">두피관리사</h4>
+                                        <span class="font-17 weight-600">시행처 : 사단법인 국제두피모발협회 </span>
+                                        <p class="font-16 weight-300">헤드스파현장에서 서비스 매니저로서의 실무를 담당할 수 있는 지식습득과 훈련을 통한 전문인력 양성을 목표로하여 헤드스파를 찾는 고객이 신회를 느끼고, 믿고 의지할 수 있는 헤드스파 상담가의 역할을 원활하게 수행 할 수 있는 직무</p>
+                                        <a href="http://www.trichology.org/page/jh_34" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">림프드레나지전문가</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국산업인력공단</span>
+                                        <p class="font-16 weight-300">림프드레나지에 대한 전문적인 이론과 실무를 바탕으로 림프순환 촉진을 촉진시켜 체내 노폐물 배출 및 부종완화를 목적으로 직무를 수행</p>
+                                        <a href="https://m.smc365.ac:4463/curriculum/curriculum01.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">미용기기전문가</h4>
+                                        <span class="font-17 weight-600">시행처 : 민간자격</span>
+                                        <p class="font-16 weight-300">미용기기에 대한 전문적인 기초지식을 바탕으로 다양한 미용기기들을 올바르고 안전하게 사용할 수 있으며 피부유형에 적합한 미용기기를 적용할 수 있는 직무를 수행</p>
+                                        <a href="https://post.naver.com/viewer/postView.naver?volumeNo=30941635&memberNo=45709728" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">왁싱코디네이터</h4>
+                                        <span class="font-17 weight-600">시행처 : 민간자격</span>
+                                        <p class="font-16 weight-300">왁싱에 대한 방법 안내, 왁싱 및 도구 활용법, 사후관리법 등 왁싱교육프로그램을 만들어 교육하는 업무를 수행</p>
+                                        <a href="http://www.koreawaxing.com/sub/sub03_02.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">힐링아로마테라피전문가</h4>
+                                        <span class="font-17 weight-600">시행처 : 민간자격</span>
+                                        <p class="font-16 weight-300">아로마 에센셜 오일에 관한 전문적인 지식을 바탕으로 에센셜 오일을 추출하고 상황에 맞도록 에센셜 오일을 블렌딩하여 다양한 종류의 블렌딩 오일 및 화장품을 만들 수 있으며 관련기관에서 교육프로그램을 기획하고 운영하는 전문 강사로서 직무를 수행</p>
+                                        <a href="https://arome.kr/" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">속눈썹 교육강사</h4>
+                                        <span class="font-17 weight-600">시행처 : 민간자격</span>
+                                        <p class="font-16 weight-300">속눈썹의 특성을 파악하고 속눈썹관리에 관한 기술을 지도하여 속눈썹 연출에 올바른 지식과 기능을 학생들에게 전문적으로 지도할 수 있는 직무 수행</p>
+                                        <a href="http://www.lijschool.com/page5_01.html" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">스킨아트(반영구) 코디네이터</h4>
+                                        <span class="font-17 weight-600">시행처 : 민간자격</span>
+                                        <p class="font-16 weight-300">얼굴 이미지에 어울리는 눈썹형태를 우수한 디자인 실력을 바탕으로 제작하고 이미지메이킹 역할과 상담하는 업무를 수행</p>
+                                        <a href="https://www.beautystylist.co.kr/kboard/kboard_view.asp?table=bd_exdata&num=6&keyword=&category=&page=1" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 교수소개 -->
+            <div class="section_05" id="professor">
+                <div class="inner">
+                    <div class="pf_info">
+                        <div class="top_pf_tit">
+                            <span class="font-25 weight-300 point_f">교수진</span>
+                            <h4 class="font-45 weight-800 point_f">전공 교육 <br><b class="point_c">교수진</b> 소개</h4>
+                            <p class="font-20 weight-300"><b>학과 사무실</b> <br> 신비관 208호 <br>TEL | 749-7170<br>FAX | 749-7174</p>
+                        </div>
+                        <div class="bottom_btn_link">
+                            <a href="images/main/suseong_beauty.pdf" download class="font-17 weight-500 point_f">DEPARTMENT LIBRARY <br><b class="font-22">학과 리플렛 다운로드</b> <i>→</i></a>
+                            <a href="https://ipsi.sc.ac.kr/" target="_blank" class="font-17 weight-500 point_f">COLLEGE ENTRANCE <br><b class="font-22">대학 입시페이지 바로가기</b> <i>→</i></a>
+                        </div>
+                    </div>
+                    
+                    <ul class="pf_list">
+                        <li class="on">
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">한미라 교수 <span class="font-14 weight-500">학과장</span></h5>
+                                    <h6 class="font-18 weight-500">기초&응용 얼굴관리</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 204호<br>
+                                    053)749-7173<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">김영희 교수</h5>
+                                    <h6 class="font-18 weight-500">피부미용기기관리, 메디컬스킨케어</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 204호<br>
+                                    053)749-7172<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">심정묘 교수</h5>
+                                    <h6 class="font-18 weight-500">림프드레나지</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 204호<br>
+                                    053)749-7175<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">김보경 교수</h5>
+                                    <h6 class="font-18 weight-500">오리엔탈스파테라피</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 204호<br>
+                                    053)749-7177<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">문현덕 교수</h5>
+                                    <h6 class="font-18 weight-500">근육학실무</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호<br>
+                                    010-2373-0232<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">여은주 교수</h5>
+                                    <h6 class="font-18 weight-500">스킨아트메이크업</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호<br>
+                                    010-9367-5660<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">감승자 교수</h5>
+                                    <h6 class="font-18 weight-500">네일아트</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호<br>
+                                    010-2593-2144<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">금성인 교수</h5>
+                                    <h6 class="font-18 weight-500">미용보건위생, 메디컬스킨케어</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호<br>
+                                    010-4535-7062<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">윤재현 교수</h5>
+                                    <h6 class="font-18 weight-500">두피관리</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호<br>
+                                    010-8996-9519<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">노진아 교수</h5>
+                                    <h6 class="font-18 weight-500">고객서비스실무</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호<br>
+                                    010-4124-0353<br>
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">구태규 교수</h5>
+                                    <h6 class="font-18 weight-500"></h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">박계옥 교수</h5>
+                                    <h6 class="font-18 weight-500">아로마&화장품 사용</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호<br>
+                                    010-4511-1523
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">최근원 교수</h5>
+                                    <h6 class="font-18 weight-500"></h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    신비관 208호
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                    </ul>          
+                </div> 
+            </div> 
+
+    
+
+            <!-- 협력기관 -->
+            <div class="section_07" id="partner">
+                <div class="inner">    
+                    <div class="partner_swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo01.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo02.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo03.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo04.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo05.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo06.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo07.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo08.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo09.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo10.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo11.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo12.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo13.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo14.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo15.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo16.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo17.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo18.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo19.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo20.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo21.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo22.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo23.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo24.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo25.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo26.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo27.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo28.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo29.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo30.png' %}" alt="웰스킨케어"></div>
+                                <div class="swiper-slide"><img src="{% static 'beauty/images/main/partner_logo31.png' %}" alt="웰스킨케어"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    
+
+    
+        </div>
+    </main>
+
+    <script src="{% static 'beauty/js/main.js' %}"></script>
+    <footer>
+        <div id="footer">
+            <div class="inner">
+                <div class="foot_logo"><img src="{% static 'beauty/images/main/footer_logo.png' %}" alt="수성대학교 시니어골프과 logo"></div>
+                <div class="copyright font-16 weight-300">(c) 2024 SUSEONG UNIVERSITY. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

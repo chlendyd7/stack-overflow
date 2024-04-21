@@ -1,0 +1,14 @@
+#footer{color: #5f5f5f; padding: 30px 0 40px; border-top: 1px solid #9f9f9f; box-sizing: border-box;}
+#footer .inner{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#footer .foot_logo{width: 250px;}
+#footer .foot_logo img{max-width: 100%;}
+
+@media screen and (max-width : 1200px) {
+    #footer .foot_logo{width: 200px;}
+}
+@media screen and (max-width : 768px) {
+    #footer .copyright{width: 100%; margin-top: 10px;}
+}
+@media screen and (max-width : 650px) {
+    #footer .foot_logo{width: 150px;}
+}
