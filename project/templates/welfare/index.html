@@ -1,0 +1,649 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수성대학교 사회복지상담</title>
+    <link rel="stylesheet" href="{% static 'welfare/css/default.css'%}">
+    <link rel="stylesheet" href="{% static 'welfare/css/head.css'%}"> 
+    <link rel="stylesheet" href="{% static 'welfare/css/foot.css'%}"> 
+    <link rel="stylesheet" href="{% static 'welfare/css/main.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="{% static 'welfare/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="inner">
+                <div class="gnb">
+                    <div class="logo">
+                        <a href="{% url 'golf_index' %}">
+                            <img src="{% static 'welfare/images/top/logo.png'%}" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#about">학과소개</a></li>
+                        <li><a href="#course">졸업 후 진로</a></li>
+                        <li><a href="#certification">자격증</a></li>
+                        <li><a href="#professor">교수소개</a></li>
+                        <li><a href="#partner">협력기관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </header>
+    
+
+    <main>
+        <div class="main_page">
+            <!-- 메인 배너 -->
+            <div class="section_01">
+                <div class="banner_top">
+                    <div class="inner">
+                        <div class="flr_txt">
+                            <h2 class="font-30 weight-500 point_f">HUMAN SOCIAL WELFARE <br>PSYCHOLOGICAL COUNSELOR TRAINING</h2>
+                        </div>
+                        <div class="fll_txt">
+                            <h1 class="weight-800 point_f point_c">MAJOR IN SOCIAL WELFARE <br>COUNSELING</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_img">
+                    <div class="inner"> 
+                        <h3 class="font-22 weight-600">Well Life Care <br>사회복지상담사</h3>
+                        <h2 class="font-40 weight-900 point_f">사회복지상담 전공</h2>
+                    </div>
+                </div>
+                <div class="scroll_down font-16">SCROLL DOWN <br>▼</div>
+            </div> 
+
+    
+            <!-- 학과소개 -->
+            <div class="section_02" id="about">
+                <div class="inner">
+                    <div class="txt_ani">
+                        <!--  -->
+                        <div class="box_ani">
+                            <p class="font-100 weight-800 point_f">사회복지직공무원</p>
+                            <p class="font-100 weight-800 point_f">기업복지재단</p>
+                            <p class="font-100 weight-800 point_f">각종 공단</p>
+                            <p class="font-100 weight-800 point_f">지역사회복지기관</p>
+                            <p class="font-100 weight-800 point_f">사회복지 관련 기관 및 시설</p>
+                            <p class="font-100 weight-800 point_f">각종 협의회 등 직능단체</p>
+                            <p class="font-100 weight-800 point_f">사회복지상담기관</p>
+                        </div>
+                        <p class="font-70 weight-500 point_f">에 관심있다면</p>
+                    </div>
+                    <ul class="about_list">
+                        <li>
+                            <img src="{% static 'welfare/images/main/about_icon01.png' %}" alt="about_icon01">
+                            <p class="font-22 weight-500 point_f">해외 장기실습 및 <br class="none"> 인턴십 기회 제공</p>
+                        </li>
+                        <li>
+                            <img src="{% static 'welfare/images/main/about_icon02.png' %}" alt="about_icon02">
+                            <p class="font-22 weight-500 point_f">주간판, 야간반, 평생학습자반(주말반) <br class="none">운영으로 학습의 기회 확대</p>
+                        </li>
+                        <li>
+                            <img src="{% static 'welfare/images/main/about_icon03.png' %}" alt="about_icon03">
+                            <p class="font-22 weight-500 point_f">전공동아리 활동을 통한 <br class="none">자기개발</p>
+                        </li>
+                    </ul>
+
+
+                    <div class="about_flex">
+                            <h3 class="font-45 weight-900 point_f lett_05">TRAINING WELL-CARE SOCIAL WELFARE COUNSELORS <br>WITH PERSONALITY AND PRACTICAL SKILLS</h3>
+                        <div class="left_info">
+                            <p class="font-17 weight-300">사회복지상담전공은 사회복지 및 상담 관련 이론과 지식, 기술을 활용하여 심리적, 사회적, 경제적으로 다양한  <br class="none">
+                            어려움을 겪고 있는 개인 및 집단에게 필요한 도움을 제공하는 사회복지 상담전문가를 양성하는 학과이다.</p>
+                            <span class="font-25 weight-500 point_f">인성과 실무역량을 갖춘 <br> <b>웰케어</b><br> <b>사회복지상담사</b> 양성</span>
+                        </div>
+                        <div class="right_button">
+                            <button class="cclum_btn ccm font-17 weight-500 point_f">CURRICULUM <br><b class="font-22">교육과정 OPEN</b> <i>→</i></button>
+                            <button class="cclum_btn degree font-17 weight-500 point_f">CURRICULUM <br><b class="font-22">비학위 과정 : JUMP UP 디그리</b> <i>→</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+   
+
+ 
+            <div class="pop_bg"></div>
+            <div class="cclum_popup ccm">
+                <div class="cclum_ctt">
+                    <table>
+                        <caption>사회복지상담전공 교육과정 로드맵</caption>
+                        <tr>
+                            <th>전공직무</th>
+                            <th class="bold">1학년 1학기</th>
+                            <th class="bold">1학년 2학기</th>
+                            <th class="bold">2학년 1학기</th>
+                            <th class="bold">2학년 2학기</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="bold">직무공통</td>
+                            <td>인간행동과 사회환경</td>
+                            <td>사회복지정책론</td>
+                            <td>프로그램 개발과평가</td>
+                            <td>사회복지현장실습 및 세미나</td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>사회복지법제와실천</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr class="line">
+                            <td rowspan="2" class="bold">심리상담사 <br>(직무1)</td>
+                            <td>심리학개론</td>
+                            <td>상담이론</td>
+                            <td>집단상담의실제</td>
+                            <td>상담사례캡스톤디자인</td>
+                        </tr>
+                        <tr>
+                            <td>노인심리 및 상담</td>
+                            <td>가족상담 및 치료</td>
+                            <td>청소년심리 및 상담</td>
+                            <td></td>
+                        </tr>
+
+                        <tr class="line">
+                            <td rowspan="2" class="bold">사회복지사 <br>(직무2)</td>
+                            <td>사회복지학개론</td>
+                            <td>가족복지론</td>
+                            <td>사회복지조사론</td>
+                            <td>사회복지실천기술론</td>
+                        </tr>
+                        <tr>
+                            <td>사회복지행정론</td>
+                            <td>청소년복지론</td>
+                            <td>지역사회복지론</td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <caption>사회복지상담전공 교육과정 로드맵</caption>
+                        <tr>
+                            <th class="bold">교양 교육과정</th>
+                            <th class="bold">웰케어 융합전공과정</th>
+                            <th class="bold">비교과</th>
+
+                        </tr>
+                        <tr>
+                            <td>자기계발과 <br>진로코칭</td>
+                            <td>WH(3학점) + 신산업(6학점)</td>
+                            <td>심리상담사 특강</td>
+                        </tr>
+                        <tr>
+                            <td>경력개발과 <br>취업코칭</td>
+                            <td><span>웰시티신산업<br> 융합전공(ND) <br>(9학점)</span></td>
+                            <td>가족심리상담사특강</td>
+                        </tr>
+                        <tr>
+                            <td>조직문화와 <br>직업윤리</td>
+                            <td rowspan="3">
+                                <div class="bd">
+                                    <p>사회복지조사론</p>
+                                </div>
+
+                                <div class="bd">
+                                    <p>AI빅데이터과<br>:클라우드의 이해</p>
+                                    <p>DT소양교양교과<br>:4차 산업시대 데이터 활용</p>
+                                    <p>K-MOOC 신산업관련<br>1학점</p>
+                                </div>
+                            </td>
+                            <td>원예심리상담사특강</td>
+                        </tr>
+                        <tr>
+                            <td>인성과 <br>리더십</td>
+                            <td>복지사현장사례특강</td>
+                        </tr>
+                        <tr>
+                            <td>비즈니스<br> 커뮤니케이션</td>
+                            <td>상담전문가<br>상담사례특강</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>복지/상담관련 시설<br>체험 및 견학</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>캡스톤디자인멘토링 <span>LiFE-IST 인증</span></td>
+                        </tr>
+    
+                    </table>
+                </div>
+                <div class="close"></div>
+            </div>
+            <div class="cclum_popup degree">
+                <div class="cclum_ctt">
+                    <table>
+                        <caption>비학위과정 : Jump Up 다그리</caption>
+                        <tr>
+                            <th class="bold" colspan="4">비학위과정 : Jump up 디그리</th>
+                        </tr>
+                        <tr>
+                            <td class="bold">학위과정<br> 보완과정</td>
+                            <td>- 심리상담사 자격취득 과정 <br>- 위기심리상담사 자격취득과정</td>
+                            <td class="bold" rowspan="2">비교과과정 <br>연계운영</td>
+                            <td rowspan="2">재학생 대상</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">일자리창출<br> 취창업과정</td>
+                            <td class="bdr">- 심리상담센터 설치운영 과정<br> - 노인복지시설설치운영 및 취창업과정</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">학점연계형<br>과정</td>
+                            <td>- 사회복지현장실습 시간제 등록</td>
+                            <td class="bold">사회복지현장실습 <br>및 세미나<br>(학점인정)</td>
+                            <td>지역주민 재직자<br> 학생 대상</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">직무역량강화<br>자격증과정</td>
+                            <td>- 로컬크리에이터 자격과정 <br>- 리빙랩 코디네이터자격과정</td>
+                            <td rowspan="2" colspan="2">지역주민 대상 <br>재직자 대상</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">첨단산업관련 <br>교육과정</td>
+                            <td class="bdr">- 빅데이터활용 시설운영전문가과정</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="close"></div>
+            </div>
+    
+    
+            <!-- 졸업 후 진로 -->
+            <div class="section_03" id="course">
+                <div class="inner">
+                    <ul id="curriculum_tab">
+                        <li>나는</li>
+                        <li><a href="#" data-field="field_01" class="active">사회복지</a></li>
+                        <li><a href="#" data-field="field_02">심리상담</a></li>
+                        <li>분야의</li>
+                    </ul>
+    
+                    <div id="curriculum_contents">
+                        <ul id="curriculum_cate_ul_field_01" class="field_01">
+                            <li><a href="#" data-field="field01_01" class="active">사회복지직공무원</a></li>
+                            <li><a href="#" data-field="field01_01">기업복지재단</a></li>
+                            <li><a href="#" data-field="field01_01">각종공단</a></li>
+                            <li><a href="#" data-field="field01_01">지역사회복지기관</a></li>
+                            <li><a href="#" data-field="field01_01">사회복지관련 기관/시설</a></li>
+                            <li><a href="#" data-field="field01_01">각종 협의회 등 직농단체</a></li>
+                            <li>가 되고싶어요</li>
+                        </ul>
+        
+                        <ul id="curriculum_cate_ul_field_02" class="field_02 hidden">
+                            <li><a href="#" data-field="field02_01" class="active">사회복지상담기관</a></li>
+                            <li><a href="#" data-field="field02_01">가정폭력상담소</a></li>
+                            <li><a href="#" data-field="field02_01">성폭력상담소</a></li>
+                            <li><a href="#" data-field="field02_01">상담전문가</a></li>
+                            <li>가 되고싶어요</li>
+                        </ul>
+                    </div>
+    
+                    <div class="curriculum_list">	
+                        <ul  class="curriculum_list_01">
+                            <li data-field="사회복지학개론"><a href="#none">사회복지학개론</a></li>
+                            <li data-field="인간행동과 사회환경"><a href="#none">인간행동과 사회환경</a></li>
+                            <li data-field="가족 복지론"><a href="#none">가족 복지론</a></li>
+                            <li data-field="청소년 복지론"><a href="#none">청소년 복지론</a></li>
+                            <li data-field="사회복지행정론"><a href="#none">사회복지행정론</a></li>
+                            <li data-field="사회복지실천론"><a href="#none">사회복지실천론</a></li>
+                            <li data-field="지역사회 복지론"><a href="#none">지역사회 복지론</a></li>
+                            <li data-field="사회복지법제와 실천"><a href="#none">사회복지법제와 실천</a></li>
+                            <li data-field="노인 복지론"><a href="#none">노인 복지론</a></li>
+                            <li data-field="장애인 복지론"><a href="#none">장애인 복지론</a></li>
+                            <li data-field="사회복지 조사론"><a href="#none">사회복지 조사론</a></li>
+                            <li data-field="정신건강론"><a href="#none">정신건강론</a></li>
+                            <li data-field="사회복지 정책론"><a href="#none">사회복지 정책론</a></li>
+                            <li data-field="사회복지실천 기술론"><a href="#none">사회복지실천 기술론</a></li>
+                            <li data-field="프로그램 개발과 평가"><a href="#none">프로그램 개발과 평가</a></li>
+                            <li data-field="사회복지현장실습 및 세미나"><a href="#none">사회복지현장실습 및 세미나</a></li>
+                            <li data-field="사례관리론"><a href="#none">사례관리론</a></li>
+                        </ul>
+        
+                        <ul  class="curriculum_list_02">
+                            <li data-field="노인심리및상담"><a href="#none">노인심리및상담</a></li>
+                            <li data-field="상담이론"><a href="#none">상담이론</a></li>
+                            <li data-field="청소년심리 및 상담"><a href="#none">청소년심리 및 상담</a></li>
+                            <li data-field="심리학개론"><a href="#none">심리학개론</a></li>
+                            <li data-field="가족상담과 치료"><a href="#none">가족상담과 치료</a></li>
+                            <li data-field="집단상담의 실제"><a href="#none">집단상담의 실제</a></li>
+                            <li data-field="상담사례캡스톤디자인"><a href="#none">상담사례캡스톤디자인</a></li>
+                        </ul>
+                </div>
+            </div>
+    
+                                           
+    
+            <!-- 자격증 -->
+            <div class="section_04" id="certification">
+                <div class="bg_info">
+                    <div class="inner">
+                        <div class="right_txt">
+                            <h3 class="font-70 weight-800 point_f">ROOTING YOUR DREAM</h3>
+                            <h4 class="font-80 weight-800 point_f point_c">SOCIAL WELFARE</h4>
+                            <p class="font-25 weight-500 point_f">꿈을 위한, 새로운 도전을 위한 선택 <br> <b>사회복지상담 전공</b></p>
+                        </div>
+                    </div>
+                    <img src="{% static 'welfare/images/main/center_bg.png' %}" alt="welfare bg">
+                </div>
+                <div class="inner">
+                    <div class="certifi_swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">사회복지사 2급</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국사회복지사협회 자격관리센터</span>
+                                        <p class="font-16 weight-300">사회복지사 2급은 법령에 지정된 교과목을 이수하거나 특정 교육훈련을 이수하면 취득할 수 있습니다. </p>
+                                        <a href="https://www.welfare.net/lic/main.do" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">심리상담사</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국자격연구원</span>
+                                        <p class="font-16 weight-300">정신건강이나 정서장애와 관련된 문제에 있어서 심리적 갈등이나 과정이 매우 중요시되고 있는 시대에서 복잡한 인간의 심리상태를 파악하고 상담을 통해 인간내면의 스트레스를 해결할 수 있도록 도와주는 상담 전문가를 말합니다.</p>
+                                        <a href="https://www.korr.kr/sub/c_license/license2_01.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">가족심리상담사</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국자격연구원</span>
+                                        <p class="font-16 weight-300">가족체계이론 분야에서 훈련을 받는 전문가로 결혼, 부부, 가족체계의 맥락에서 정신장애와 정서장애를 진단하고 치료할 자격을 가진 정신건강 전문가입니다.</p>
+                                        <a href="https://www.korr.kr/sub/c_license/license1_06.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">위기심리상담사</h4>
+                                        <span class="font-17 weight-600">시행처 : 등록 민간자격</span>
+                                        <p class="font-16 weight-300">위기의 순간에 직면한 모두에게 개입하여 문제해결을 위한 대처전략이나 기술을 바탕으로 내담자의 정서안정을 돕습니다.</p>
+                                        <a href="https://www.kpei.co.kr/license/license_44.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">원예심리상담사</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국직업능력연구원</span>
+                                        <p class="font-16 weight-300">식물 기르기와 꽃 장식 등 원예활동을 매개로한 생명 중심의 프로그램을 통해 내담자의 특성과 환경을 인지하고 심리적·행동적 문제를 심리학적 관점에서 해결함으로써 내담자의 심신치유 및 사회·정서적 성장을 돕는 상담전문가 입니다.</p>
+                                        <a href="https://www.korea-edu.net/home/curriculum/info.php?item=525" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">요양보호사</h4>
+                                        <span class="font-17 weight-600">시행처 : 한국보건의료인국가시험원</span>
+                                        <p class="font-16 weight-300">양질의 요양보호서비스를 제공하는 업무를 수행하는 자로서 국가공인요양보호사 자격을 취득한 요양보호전문가를 말합니다.</p>
+                                        <a href="https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=3435" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">간호조무사</h4>
+                                        <span class="font-17 weight-600">시행처 : 대한간호조무사협회</span>
+                                        <p class="font-16 weight-300">일정한 법정 자격을 갖추고 의사나 간호사의 진료 보조와 환자의 간호에 종사하는 사람을 말합니다. </p>
+                                        <a href="https://klpna.or.kr/index.klpn?menuId=120400&upperMenuId=120000&gubun=1" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">레크레이션지도사</h4>
+                                        <span class="font-17 weight-600">시행처 : 등록 민간자격</span>
+                                        <p class="font-16 weight-300">긍정적인 사고 형성과 인지 향상을 위한 다양한 레크리에이션 활동(신나는 노래, 율동, 게임 등)으로 업무를 수행하는 것을 직무내용으로 합니다.</p>
+                                        <a href="http://www.kssia.kr/sub1_2_8.php" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">웃음치료사</h4>
+                                        <span class="font-17 weight-600">시행처 : 등록 민간자격</span>
+                                        <p class="font-16 weight-300">웃음치료사, 레크리에이션, 펀리더십 과정으로 세분화되어 있으며 웃음의 효과로 개인의 힐링 및 조직의 성과향상 방법과 팀 별 레크리에이션을 통한 조직의 단결력을 높이며, 조직문화를 개선하도록 유도 및 힐링 하는 교육입니다.</p>
+                                        <a href="https://www.kpei.co.kr/license/license_112.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">미술치료사</h4>
+                                        <span class="font-17 weight-600">시행처 : 등록 민간자격</span>
+                                        <p class="font-16 weight-300">미술 활동을 통해 감정이나 내면 세계를 표현하고 기분의 이완과 감정적 스트레스를 완화시키는 방법입니다.</p>
+                                        <a href="https://www.edu-center.kr/sub/c_license/license1_07.asp" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certifi_box">
+                                        <h4 class="font-24 weight-800">응급처치강사</h4>
+                                        <span class="font-17 weight-600">시행처 : 등록 민간자격</span>
+                                        <p class="font-16 weight-300">일상활동에서 발생하는 외상 또는 응급질환자에게 손상부위의 악화 및 장애를 방지하기 위하여 현장에서 적절한 응급처치 후 환자이송에 도움을 주는 처치입니다.</p>
+                                        <a href="https://www.klsa.kr/gnuboard5/bbs/content.php?co_id=sub202" target="_blank" class="font-16 weight-400 link_p">관련사이트 바로가기 &nbsp; →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 교수소개 -->
+            <div class="section_05" id="professor">
+                <div class="inner">
+                    <div class="pf_info">
+                        <div class="top_pf_tit">
+                            <span class="font-25 weight-300 point_f">교수진</span>
+                            <h4 class="font-45 weight-800 point_f">전공 교육 <br><b class="point_c">교수진</b> 소개</h4>
+                            <p class="font-20 weight-300"><b>학과 사무실</b> <br> 경복관 718호 <br>TEL | 053)749-7198 <br> FAX | 053)749-7190</p>
+                        </div>
+                        <div class="bottom_btn_link">
+                            <a href="{% static 'welfare/images/main/suseong_welfare.pdf' %}" download class="font-17 weight-500 point_f">DEPARTMENT LIBRARY <br><b class="font-22">학과 리플렛 다운로드</b> <i>→</i></a>
+                            <a href="https://ipsi.sc.ac.kr/" target="_blank" class="font-17 weight-500 point_f">COLLEGE ENTRANCE <br><b class="font-22">대학 입시페이지 바로가기</b> <i>→</i></a>
+                        </div>
+                    </div>
+                    
+                    <ul class="pf_list">
+                        <li class="on">
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">이우언 교수</h5>
+                                    <h6 class="font-18 weight-500">인간행동과 사회환경, 청소년문제와 보호</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    053)749-7195<br>
+                                    welee0505@naver.com
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">김종배 교수</h5>
+                                    <h6 class="font-18 weight-500">사회복지정책론, 가족복지론</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    053)749-7194<br>
+                                    jbkim@sc.ac.kr
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">신민정 교수</h5>
+                                    <h6 class="font-18 weight-500">사회복지개론, 사례관리론</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    053)749-7193<br>
+                                    smj9882@naver.com
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">백창환 교수</h5>
+                                    <h6 class="font-18 weight-500">사회복지조사론, 지역사회복지론</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    053)749-7197<br>
+                                    airbonebaek@hanmail.net
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">이원주 교수</h5>
+                                    <h6 class="font-18 weight-500">노인복지론, 사회복지법제와 실천</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    053)749-7191<br>
+                                    wjtjkjdj@gmail.com
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">정광훈 교수</h5>
+                                    <h6 class="font-18 weight-500">노인심리 및 상담, 여성복지론, 청소년활동, 학습심리학</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    053)749-7189<br>
+                                    hoonying@naver.com
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">강기표 교수</h5>
+                                    <h6 class="font-18 weight-500">장애인복지론, 사회복지행정론</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    baba218kkp@hanmail.net
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">배헌석 교수</h5>
+                                    <h6 class="font-18 weight-500">청소년문화, 청소년활동, 정신건강론</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    ask4me71@daum.net
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">이정옥 교수</h5>
+                                    <h6 class="font-18 weight-500">청소년지도방법론,청소년문화</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    coffee8348@naver.com
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">박해정 교수</h5>
+                                    <h6 class="font-18 weight-500">청소년문화,청소년프로그램개발과 평가</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    karmashore@qmail.com
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <span>
+                                    <h5 class="font-25 weight-800 point_f">황유경 교수</h5>
+                                    <h6 class="font-18 weight-500">청소년 심리 및 상담 프로그램개발과 평가</h6>
+                                </span>
+                                <p class="font-16 weight-400">
+                                    경복관 718호<br>
+                                    cand-y@hanmail.net 
+                                </p>
+                            </div>
+                            <button class="open font-25 weight-900">+</button>
+                        </li>
+                    </ul>          
+                </div> 
+            </div> 
+
+
+            <!-- 협력기관 -->
+            <div class="section_07" id="partner">
+                <div class="inner">    
+                    <div class="partner_swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo01.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo02.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo03.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo04.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo05.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo06.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo07.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo08.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo09.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo10.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo11.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo12.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo13.png' %}" alt="사회복지상담"></div>
+                                <div class="swiper-slide"><img src="{% static 'welfare/images/main/partner_logo14.png' %}" alt="사회복지상담"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    
+    
+        </div>
+    </main>
+
+    <script src="{% static 'welfare/js/main.js' %}"></script>
+    <footer>
+        <div id="footer">
+            <div class="inner">
+                <div class="foot_logo"><img src="{% static 'welfare/images/main/footer_logo.png' %}" alt="수성대학교 시니어골프과 logo"></div>
+                <div class="copyright font-16 weight-300">(c) 2024 SUSEONG UNIVERSITY. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

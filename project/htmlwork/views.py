@@ -21,3 +21,5 @@ def life_sub04_02(request): return render(request, 'life/sub04_02.html')
 def golf_index(request): return render(request, 'golf/index.html')
 
 def beauty_index(request): return render(request, 'beauty/index.html')
+
+def welfare_index(request): return render(request, 'welfare/index.html')

@@ -24,4 +24,6 @@ urlpatterns = [
     path('golf_index', views.golf_index, name='golf_index'),
 
     path('beauty_index', views.beauty_index, name='beauty_index'),
+    
+    path('welfare_index', views.welfare_index, name='welfare_index'),
 ]
