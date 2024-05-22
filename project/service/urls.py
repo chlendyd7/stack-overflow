@@ -6,6 +6,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
     TokenVerifyView,
 )
+from django.contrib.auth.views import LoginView, LogoutView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register('product', views.ProductViewSet, basename='product')
@@ -18,4 +19,9 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
     path('signup/', views.UserCreateAPIView.as_view(), name='user-create'),
+    path('chat/', views.chatPage, name="chat-page"),
+    path("auth/login/", LoginView.as_view
+         (template_name="chat/loginPage.html"), name="login-user"),
+    path("auth/logout/", LogoutView.as_view(), name="logout-user"),
+
 ]
