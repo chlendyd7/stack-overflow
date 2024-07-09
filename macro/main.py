@@ -1,3 +1,4 @@
 from naver import Naver
+from gui_thiker import make_gui
 
-Naver().start()
+make_gui(Naver().start())
