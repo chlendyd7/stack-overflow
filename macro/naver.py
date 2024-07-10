@@ -13,10 +13,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
+import openpyxl
 
 
 class Naver:
-    def start(self):
+
+    def __init__(self, url):
+        self.url = url
+
+    def start(self, id_list):
         try:
             service = Service(ChromeDriverManager().install())
             options = webdriver.ChromeOptions()
@@ -24,7 +29,6 @@ class Naver:
 
             url = 'https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/'
             driver.get(url)
-            input()
             # TODO 엑셀이나 db와 연동
             id = 'chlendyd7'
             password = 'd4632077zZ@'
