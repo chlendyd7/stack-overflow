@@ -5,11 +5,14 @@ import openpyxl
 
 def open_excel():
     wb = openpyxl.load_workbook('macro/naver.xlsx')
-    url_sheet = wb.active
+    assert 'id_pw' in wb.sheetnames, 'id_pw 시트가 존재하지 않습니다'
+    assert 'urls' in wb.sheetnames, 'urls 시트가 존재하지 않습니다'
+    url_sheet = wb['urls']
     url_list = []
-    urls = url_sheet[1]
-    for cell in urls:
-        url_list.append(cell.value)
+    urls = url_sheet.iter_rows(min_row=1, max_row=url_sheet.max_row, min_col=1, max_col=1)
+    for row in urls:
+        for cell in row:
+            url_list.append(cell.value)
 
     id_sheet = wb['id_pw']
     id_list = []
@@ -17,7 +20,6 @@ def open_excel():
         id_list.append(row)
 
     return url_list, id_list
-
 
 def tqdm_work():
     total_iterations = 100
