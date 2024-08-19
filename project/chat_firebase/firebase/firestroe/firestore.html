@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firestore Example</title>
+</head>
+
+<body>
+    <h1>Firestore Example</h1>
+    <button id="setAllDataBtn">SetAllDataBtn</button>
+    <button id="getDataBtn">Get Data</button>
+    <button id="setDataBtn">Set Data</button>
+    <pre id="output"></pre>
+
+    <!-- 외부 JavaScript 파일 로드 -->
+    <script type="module">
+        // 상위 폴더의 모듈 가져오기
+        import { setDatas } from './example_data.js';
+        import { getData, setData } from './get_document.js';
+
+        document.getElementById('setAllDataBtn').addEventListener('click', async () => {
+            await setDatas();
+            document.getElementById('output').textContent = 'complete write data'
+        });
+
+        document.getElementById('getDataBtn').addEventListener('click', async () => {
+            const data = await getData();
+            if (data) {
+                document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+            } else {
+                document.getElementById('output').textContent = "No such document!";
+            }
+        });
+        document.getElementById('setDataBtn').addEventListener('click', async () => {
+            await setData();
+            document.getElementById('output').textContent = "Data written!";
+        });
+    </script>
+</body>
+
+</html>

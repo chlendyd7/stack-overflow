@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Example</title>
+    <!-- Firebase JavaScript SDK -->
+    <script type="module">
+        import { db } from './firebaseConfig.js';
+        import { getDatabase, ref, push, set } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js';
+
+        function getCurrentDateTime(timeZone = 'local') {
+            const now = new Date();
+
+            let year, month, day, hours, minutes, seconds;
+
+            if (timeZone === 'UTC') {
+                year = now.getUTCFullYear();
+                month = String(now.getUTCMonth() + 1).padStart(2, '0');
+                day = String(now.getUTCDate()).padStart(2, '0');
+                hours = String(now.getUTCHours()).padStart(2, '0');
+                minutes = String(now.getUTCMinutes()).padStart(2, '0');
+                seconds = String(now.getUTCSeconds()).padStart(2, '0');
+            } else {
+                year = now.getFullYear();
+                month = String(now.getMonth() + 1).padStart(2, '0');
+                day = String(now.getDate()).padStart(2, '0');
+                hours = String(now.getHours()).padStart(2, '0');
+                minutes = String(now.getMinutes()).padStart(2, '0');
+                seconds = String(now.getSeconds()).padStart(2, '0');
+            }
+
+            const formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+            return formattedDateTime;
+        }
+
+        // 데이터 쓰기 예제 함수
+        window.sendMessage = function () {
+            const messageInput = document.getElementById('messageInput').value;
+            const timestamp = new Date().toString();
+            const messagesRef = ref(db, 'messages');
+            push(messagesRef, {
+                message: messageInput,
+                timestamp: timestamp
+            });
+            document.getElementById('messageInput').value = '';
+        }
+
+        window.writeUserData = function (chatRoomId, userId, nickname, content, profileImage) {
+            // const db = getDatabase();
+            set(ref(db, 'chat/' + chatRoomId), {
+                user: {
+                    id: userId,
+                    nickname: nickname,
+                    profile_image: profileImage
+                },
+                content: content,
+                datetime: getCurrentDateTime()
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Firebase Example</h1>
+    <div>
+        <label for="messageInput">Message:</label>
+        <input type="text" id="messageInput">
+        <button onclick="sendMessage()">Send Message</button>
+    </div>
+    <h1>Firebase Write User Data Example</h1>
+    <div>
+        <label for="chatRoomId">chatRoomId ID:</label>
+        <input type="text" id="chatRoomId"><br>
+        <br>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId"><br>
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname"><br>
+        <label for="content">Content:</label>
+        <input type="text" id="content"><br>
+        <label for="profileImage">profileImage URL:</label>
+        <input type="text" id="profileImage"><br>
+        <button onclick="writeUserData(
+                document.getElementById('chatRoomId').value,
+                document.getElementById('userId').value,
+                document.getElementById('nickname').value,
+                document.getElementById('content').value,
+                document.getElementById('profileImage').value
+            )">Submit</button>
+    </div>
+</body>
+
+</html>
